@@ -875,7 +875,7 @@ input[type=checkbox], input[type=radio] {
   border-right: thin solid #777;
   border-left: thin solid #777;
   border-bottom: 0.15em solid #777;  
-  border-radius: 0.15em;
+  border-radius: 0.4em;
   background: -webkit-linear-gradient(top,  #f0f0f0 0%, #cccccc 100%);
   font-size: 1.1em;
   font-weight: 600;
@@ -911,7 +911,19 @@ input[type=checkbox], input[type=radio] {
 }
 
 .caramel {
-  background: #c85e17;
+  background: #c86726;
+}
+
+.cayenne {
+  background: #c73e2c;
+}
+
+.mustard {
+  background: #FFC857;
+}
+
+.eggplant {
+  background: #614051;
 }
 
 .col-detail {
