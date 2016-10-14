@@ -10,15 +10,7 @@ header {
   overflow: hidden;
 }
 
-.pageHead1 {
-  position: absolute;
-  letter-spacing: 0.1vw;
-  margin-left: 7.5em;
-  margin-top: 1.2em;
-  color: #fff;
-}
-
-.h1demo {
+/*.h1demo {
   text-transform: uppercase;
   letter-spacing: 0.2vw;
   padding: 0 0 0 2vw;
@@ -194,7 +186,7 @@ header {
 .link-ex::after {
   content: url("../img/external.png");
   padding-left: 3px;
-}
+}*/
 
 
 .headerLogo {
@@ -224,7 +216,7 @@ header {
   vertical-align: middle;
 }
 		
-.mainNavDemo {
+/*.mainNavDemo {
   background: #333;
   font-size: 0.95em;
   padding: 1em 1em 1em 1em;
@@ -262,7 +254,7 @@ header {
   color: #aaa;
   text-decoration: none;
   overflow: hidden;
-}
+}*/
 
 #logoNavDemo img {
   height: 1.5em;
@@ -298,21 +290,18 @@ header {
 .sticky {
   position: fixed;
   width: 100%;
-  top:0;
+  top: 0;
 }
 
 .stickyAside {
   position: fixed;
-  left: 74.3%;
-  top: 3.2em;
-/*  width: 100%;
-  top: 3.2em;
-  float: right;
-  left: 70vw;
-  margin-right: 2.5vw;*/
+  display: inherit;
+  top: 3.5em;
+  right: 0;
+  width: 33vw;
 }
 
-.pageContent {
+/*.pageContent {
 	margin-bottom: 15%;
 	float: left;
 	width: 75%;
@@ -760,4 +749,201 @@ input[type=checkbox], input[type=radio] {
   .row-4 [class*="col-"]:first-child {
     margin-left: -60px;
   }  
+}*/
+
+.wrap {
+  min-height: 100em;
 }
+
+.content {
+  padding: 1.5vw 2.5vw 1.5vw 2.5vw;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'SanFranciscoDisplay-Regular', sans-serif;
+}
+
+.sidebar {
+  width: 100%;
+  background: #fff;
+  padding: 1.2vw 1vw 1.2vw 0;
+  box-sizing: border-box;
+  border: thin solid #ddd;
+  border-radius: 0.2em;
+  font-family: 'SanFranciscoDisplay-Regular', sans-serif;
+  font-size: 1.15em;
+  line-height: 1.7em;
+}
+
+.sidebarNav a {
+  color: #886f5b;
+  text-decoration: none;
+}
+
+.sidebarNav a:hover {
+  color: #000;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.sidebarNav, .sidebarNavSub {
+  list-style-type: none;
+  margin: 0;
+}
+
+.sidebarNav {
+  padding: 0em 1.5em 0em 1.5em;
+  line-height: 1.8em;
+}
+
+.sidebarNavSub {
+  padding-left: 1em;
+}
+
+@media (min-width: 600px) {
+  .sidebar {
+  float: right;
+  width: 30%;
+  margin: 1em 2vw; 
+  }
+
+  .content {
+  width: 70%;
+  }
+}
+
+@media(max-width: 599px){
+  .sidebar {
+    position: inherit;
+  }
+}
+
+.pageHead1 {
+  position: absolute;
+  letter-spacing: 0.1vw;
+  margin-left: 7.5em;
+  margin-top: 1.2em;
+  color: #fff;
+}
+
+.pageHead2 {   
+  font-family: 'SanFranciscoDisplay-Regular', sans-serif;
+  letter-spacing: 0.05vw; 
+  font-size: 2em;
+  color: #332a22;
+  margin-top: 0;
+}
+
+.pageHead3 {
+  font-family: 'SanFranciscoDisplay-Regular', sans-serif;
+  font-size: 1.5em;
+  color: #332a22;
+  padding-top: 1em;
+}
+
+.pageHead4 {
+  font-family: 'SanFranciscoDisplay-Regular', sans-serif;
+  padding-top: 1em;
+  font-size: 1.4em;
+  color: #886f5b;
+}
+
+.paraOpen {
+  font-family: 'SanFranciscoDisplay-Regular', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #886f5b;
+}
+
+
+.toggle-label {
+  display: block;
+  margin-bottom: 0em;
+  margin-top: 0.5em;
+  max-width: 8em;
+  margin-left: 0;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.button {
+  color: #555;
+  letter-spacing: 0.02em;
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  border-top: thin solid #777;
+  border-right: thin solid #777;
+  border-left: thin solid #777;
+  border-bottom: 0.15em solid #777;  
+  border-radius: 0.15em;
+  background: -webkit-linear-gradient(top,  #f0f0f0 0%, #cccccc 100%);
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #cccccc;
+  cursor: pointer;
+}
+
+.gridsEx {
+  margin: 0 2vw 0 2vw;
+}
+
+.col-1-2, .col-1-4 { 
+  font-size: 2vw;
+  margin-bottom: 20px; 
+  padding: 1em; 
+  text-align: center; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+  border-radius: 0.8em;
+  color: #fff;
+} 
+
+.matcha {
+  background: #95ae6f;
+}
+
+.earthenware {
+  background: #886f5b;
+}
+
+.caramel {
+  background: #c85e17;
+}
+
+.col-detail {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 0.8em;
+  color: #fff;
+}
+
+  [class*="col-"] {
+    margin-right: 20px;
+  }
+  [class*="col-"]:last-child {
+    margin-right: 0;
+  }  
+  .col-1-2 {
+    float: left;
+    width: 50%;
+  }
+  .col-1-4 {
+    float: left;
+    width: 25%;
+  }
+  .row-2 {
+    padding-left: 20px;
+  }
+  .row-2 [class*="col-"]:first-child {
+    margin-left: -20px;
+  }
+  .row-4 {
+    padding-left: 60px;
+  }
+  .row-4 [class*="col-"]:first-child {
+    margin-left: -60px;
+  }  
