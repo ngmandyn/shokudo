@@ -37,16 +37,15 @@ header {
   padding: 0.8em 0 0.6em 0;
   vertical-align: middle;
 }
-<<<<<<< Updated upstream
-=======
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #FFFFFF;
+  background-color: white;
   color: #886F5B;
   padding: 16px;
   border: none;
   cursor: pointer;
+  letter-spacing: 2px;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -107,11 +106,10 @@ header {
   margin: 0.75em 0 0em 0.5em;
 }
 */
->>>>>>> Stashed changes
 
 .mainNavBarDemo {
   border: 1px solid #ddd;
-  font-size: 0.95em;
+  font-size: 18px;
   padding: 1em 1em 8em 1em;
   margin: 0 2vw 0 2vw;
   letter-spacing: 0.08vw;
