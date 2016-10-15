@@ -416,7 +416,6 @@ header {
 * {
   overflow-x: hidden;
 }
-*/
 
 .button {
   width: 100%;
@@ -434,7 +433,6 @@ header {
   font-size: 1.1em;
 }
 
-/*
 .button.reset {
   margin: 0 0 0 2vw;
 }
