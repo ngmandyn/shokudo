@@ -416,8 +416,10 @@ header {
 * {
   overflow-x: hidden;
 }
+*/
 
 .button {
+  width: 100%;
   color: #555;
   letter-spacing: 0.02em;
   padding: 0.5em 0.8em 0.5em 0.8em;
@@ -432,6 +434,7 @@ header {
   font-size: 1.1em;
 }
 
+/*
 .button.reset {
   margin: 0 0 0 2vw;
 }
