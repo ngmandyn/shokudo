@@ -4,10 +4,11 @@ src: url("../fonts/SanFranciscoDisplay-Regular.otf") format("opentype");
 }
 
 header {
-  font-size: 1.1vw;
+  font-size: 1.4vw;
   color: #333;
   font-family: 'SanFranciscoDisplay-Regular', sans-serif;
   overflow: hidden;
+  height: 5.5vw;
 }
 
 /*.h1demo {
@@ -193,7 +194,7 @@ header {
 	position: absolute;
 	width: 12vw;
 	margin-left: 2.5vw;
-	margin-top: 2.5em;
+	margin-top: 1.1em;
 }
 
 .headerBg {
@@ -212,7 +213,7 @@ header {
   letter-spacing: 0.1vw;
   z-index: 999;
   overflow: hidden;
-  padding: 1em 0 1em 0;
+  padding: 0.8em 0 0.6em 0;
   vertical-align: middle;
 }
 		
@@ -296,7 +297,7 @@ header {
 .stickyAside {
   position: fixed;
   display: inherit;
-  top: 3.5em;
+  top: 3.2em;
   right: 0;
   width: 33vw;
 }
@@ -768,20 +769,20 @@ input[type=checkbox], input[type=radio] {
   padding: 1.2vw 1vw 1.2vw 0;
   box-sizing: border-box;
   border: thin solid #ddd;
-  border-radius: 0.2em;
+  border-radius: 0.3em;
   font-family: 'SanFranciscoDisplay-Regular', sans-serif;
-  font-size: 1.15em;
-  line-height: 1.7em;
+  line-height: 1em;
 }
 
-.sidebarNav a {
+.sidebarLink {
+  font-size: 1.1em;
   color: #886f5b;
   text-decoration: none;
 }
 
-.sidebarNav a:hover {
+.sidebarLink:hover {
   color: #000;
-  text-decoration: underline;
+  border-bottom: thin solid #000;
   transition: color 0.2s ease;
 }
 
@@ -803,7 +804,7 @@ input[type=checkbox], input[type=radio] {
   .sidebar {
   float: right;
   width: 30%;
-  margin: 1em 2vw; 
+  margin: 0.7em 2vw; 
   }
 
   .content {
@@ -817,11 +818,17 @@ input[type=checkbox], input[type=radio] {
   }
 }
 
+@media(max-height: 650px) {
+  .sidebar {
+    position: inherit;
+  }
+}
+
 .pageHead1 {
   position: absolute;
   letter-spacing: 0.1vw;
-  margin-left: 7.5em;
-  margin-top: 1.2em;
+  margin-left: 6em;
+  margin-top: 0.4em;
   color: #fff;
 }
 
@@ -831,6 +838,7 @@ input[type=checkbox], input[type=radio] {
   font-size: 2em;
   color: #332a22;
   margin-top: 0;
+  padding-top: 0.3em;
 }
 
 .pageHead3 {
@@ -859,7 +867,7 @@ input[type=checkbox], input[type=radio] {
   display: block;
   margin-bottom: 0em;
   margin-top: 0.5em;
-  max-width: 8em;
+  max-width: 10em;
   margin-left: 0;
 }
 
@@ -868,31 +876,108 @@ input[type=checkbox], input[type=radio] {
 }
 
 .button {
-  color: #555;
-  letter-spacing: 0.02em;
-  padding: 0.5em 0.8em 0.5em 0.8em;
-  border-top: thin solid #777;
-  border-right: thin solid #777;
-  border-left: thin solid #777;
-  border-bottom: 0.15em solid #777;  
+  letter-spacing: 0.07em;
+  padding: 0.45em 0.7em 0.45em 0.7em;
   border-radius: 0.4em;
-  background: -webkit-linear-gradient(top,  #f0f0f0 0%, #cccccc 100%);
   font-size: 1.1em;
   font-weight: 600;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
 }
 
-.button:hover {
-  background: #cccccc;
+.standard {
+  color: #555;
+  border-top: thin solid #ccc;
+  border-right: thin solid #ccc;
+  border-left: thin solid #ccc;
+  border-bottom: 0.15em solid #ccc;  
+  background: #f0f0f0;
+}
+
+.button.standard:hover {
+  background: #e5e5e5;
+  border-top: thin solid #aaa;
+  border-right: thin solid #aaa;
+  border-left: thin solid #aaa;
+  border-bottom: 0.15em solid #aaa;  
   cursor: pointer;
 }
 
+.prim {
+  color: #fff;
+  border-top: thin solid #95ae6f;
+  border-right: thin solid #95ae6f;
+  border-left: thin solid #95ae6f;
+  border-bottom: 0.15em solid #95ae6f;
+  background: #a3bd7c;
+}
+
+.button.prim:hover {
+  background: #95ae6f;
+  border-top: thin solid #728852;
+  border-right: thin solid #728852;
+  border-left: thin solid #728852;
+  border-bottom: 0.15em solid #728852;
+  cursor: pointer;
+}
+
+.cta {
+  color: #fff;
+  background: #d96f29;
+  border-top: thin solid #bd6124;
+  border-right: thin solid #bd6124;
+  border-left: thin solid #bd6124;
+  border-bottom: 0.15em solid #bd6124;
+}
+
+.button.cta:hover {
+  background: #c86726;
+  border-top: thin solid #af591f;
+  border-right: thin solid #af591f;
+  border-left: thin solid #af591f;
+  border-bottom: 0.15em solid #af591f;  
+  cursor: pointer;
+}
+
+.cancel {
+  color: #fff;
+  background: #e44e3a;
+  border-top: thin solid #c73e2c;
+  border-right: thin solid #c73e2c;
+  border-left: thin solid #c73e2c;
+  border-bottom: 0.15em solid #c73e2c;  
+}
+
+.button.cancel:hover {
+  background: #c23c2b;
+  border-top: thin solid #993022;
+  border-right: thin solid #993022;
+  border-left: thin solid #993022;
+  border-bottom: 0.15em solid #993022;  
+  cursor: pointer;
+}
+
+.disabled {
+  color: #bbb;
+  border-top: thin solid #ddd;
+  border-right: thin solid #ddd;
+  border-left: thin solid #ddd;
+  border-bottom: 0.15em solid #ddd;  
+  background: #f7f7f7;
+}
+
+.button.disabled:hover {
+  cursor: not-allowed;
+}
+
 .gridsEx {
-  margin: 0 2vw 0 2vw;
+  margin: 0 2vw 0 0vw;
 }
 
 .col-1-2, .col-1-4 { 
   font-size: 2vw;
-  margin-bottom: 20px; 
+  margin-bottom: 1.5em; 
   padding: 1em; 
   text-align: center; 
   -webkit-box-sizing: border-box; 
@@ -959,3 +1044,88 @@ input[type=checkbox], input[type=radio] {
   .row-4 [class*="col-"]:first-child {
     margin-left: -60px;
   }  
+
+.link {
+  font-size: 1.15em;
+  color: steelblue;
+  text-decoration: none;
+  border-bottom: thin solid;
+}
+
+.link:hover {
+    color: #000;
+    transition: color 0.2s ease;
+}
+
+.formLabel {
+  font-size: 1.15em;
+  line-height: 1.6em;
+  width: 8em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.textInput {
+  display: block;
+  font-size: 1.15em;
+  line-height: 1.6em;
+  vertical-align: middle;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  border: thin solid #aaa;
+  border-radius: 0.3em;
+  width: 15em;
+  height: 2.3em;
+  background: #f6f6f6;
+  margin-bottom: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.dropdownInput {
+  display: block;
+  font-size: 1.15em;
+  line-height: 1.6em;
+  vertical-align: middle;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  border: thin solid #aaa;
+  border-radius: 0.15em;
+  width: 15em;
+  height: 2.3em;
+  background: #f6f6f6;
+  margin-bottom: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.textArea {
+  background: #f6f6f6;
+  display: block;
+  border: thin solid #aaa;
+  border-radius: 0.3em;
+  font-size: 1.15em;
+  line-height: 1.6em;
+  margin-bottom: 1em;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  width: 25em;
+}
+
+input[type=checkbox], input[type=radio] {
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  -o-transform: scale(1.5); 
+  margin: 0.5em 1em 1em 0.5em;
+}
+
+.checkboxLabel, .radioLabel {
+  font-size: 1.15em;
+  width: 10em;
+  display: block;
+  overflow: hidden;
+}
+
+.checkboxLabel:hover, .radioLabel:hover {
+  cursor: pointer;
+}

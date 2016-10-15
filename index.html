@@ -26,35 +26,35 @@
   
   <aside class="sidebar">
 	<ol class="sidebarNav">
-		<li><a href="#color">Colour Palette</a></li>
+		<li><a href="#color" class="sidebarLink">Colour Palette</a></li>
 		<li>
 			<ol class="sidebarNavSub">
-				<li><a href="#core">Core Colours</a></li>
-				<li><a href="#supplementary">Supplementary Colours</a></li>
+				<li><a href="#core" class="sidebarLink">Core Colours</a></li>
+				<li><a href="#supplementary" class="sidebarLink">Supplementary Colours</a></li>
 			</ol>
-		<li><a href="#interactive">Interactive Elements</a></li>
+		<li><a href="#interactive" class="sidebarLink">Interactive Elements</a></li>
 		<li>
 			<ol class="sidebarNavSub">
-				<li><a href="#buttons">Buttons</a></li>
-				<li><a href="#links">Links</a></li>
-				<li><a href="#forms">Forms</a></li>
+				<li><a href="#buttons" class="sidebarLink">Buttons</a></li>
+				<li><a href="#links" class="sidebarLink">Links</a></li>
+				<li><a href="#forms" class="sidebarLink">Forms</a></li>
 			</ol>
 		</li>
-		<li><a href="#text">Text Elements</a></li>
+		<li><a href="#text" class="sidebarLink">Text Elements</a></li>
 		<li>	
 			<ol class="sidebarNavSub">
-				<li><a href="#headings">Headings</a></li>
-				<li><a href="#para">Paragraphs</a></li>
-				<li><a href="#lists">Lists</a></li>
-				<li><a href="#quotes">Pull Quotes</a></li>
+				<li><a href="#headings" class="sidebarLink">Headings</a></li>
+				<li><a href="#para" class="sidebarLink">Paragraphs</a></li>
+				<li><a href="#lists" class="sidebarLink">Lists</a></li>
+				<li><a href="#quotes" class="sidebarLink">Pull Quotes</a></li>
 			</ol>
 		</li>
-		<li><a href="#combined">Combined Elements</a></li>
+		<li><a href="#combined" class="sidebarLink">Combined Elements</a></li>
 		<li>
 			<ol class="sidebarNavSub">
-				<li><a href="#main-nav">Main Navigation</a></li>
-				<li><a href="#prod-list">Product Listing</a></li>
-				<li><a href="#grids">Grid Structure</a></li>
+				<li><a href="#main-nav" class="sidebarLink">Main Navigation</a></li>
+				<li><a href="#prod-list" class="sidebarLink">Product Listing</a></li>
+				<li><a href="#grids" class="sidebarLink">Grid Structure</a></li>
 			</ol>
 		</li>
 		</ol>
@@ -65,7 +65,7 @@
 	<h2 class="pageHead2">Our Style Guide</h2>
 		<p class="paraOpen">This Style Guide is used by Shokudo to ensure visual consistency across our websites, marketing, communications, and products. </p>
 		<input type="checkbox" value="selected" id="toggle" class="toggle-input">
-		<label for="toggle" class="toggle-label button"><img src="img/icon-code.png" alt="Code Icon">Toggle All Code</label>
+		<label for="toggle" class="toggle-label button standard"><img src="img/icon-code.png" alt="Code Icon">Toggle All Code</label>
 
 		 <h3 class="pageHead3" id="color">Colour Palette</h3>
 		 	<h4 class="pageHead4" id="core">Core Colours</h4>
@@ -85,7 +85,47 @@
 					      <div class="col-1-4 eggplant">Eggplant<br>#614051</div>
 					    </div>
 				    </div>
+		<h3 class="pageHead3" id="interactive">Interactive Elements</h3>
+			<h4 class="pageHead4" id="buttons">Buttons</h4>
+					<button class="button standard">Standard</button>
+					<button class="button prim">Primary Action</button>
+					<button class="button cta">Call to Action</button>
+					<button class="button cancel">Cancel</button>
+					<button class="button disabled">Disabled</button>
 
+			<h4 class="pageHead4" id="links">Links</h4>
+
+				<a href="" class="link">Standard In-text Link</a>
+
+				<a href="" class="link">In-text External Link</a>
+
+				<a href="" class="sidebarLink">Sidebar Link</a>
+
+			<h4 class="pageHead4" id="forms">Forms</h4>
+				<label class="formLabel">Text Input</label>
+				<input class="textInput" type="text" id="form-subject" placeholder="Text Input Field">
+
+				<label class="formLabel">Dropdown Menu</label>
+					<select class="dropdownInput" name="recipe" id="recipe">
+						<optgroup label="Breakfast">
+						    <option value="Chequing">Pancakes</option>
+						    <option value="Saving">Cereal</option>
+						</optgroup>
+						<optgroup label="Lunch">
+							<option value="Visa">Sandwich</option>
+						 	<option value="Mastercard">Wrap</option>
+						</optgroup>
+						<optgroup label="Dinner">
+							<option value="Visa">Steak</option>
+						 	<option value="Mastercard">Seafood</option>
+						</optgroup>
+					</select>
+
+				<label class="formLabel">Text Area</label>
+				<textarea class="textArea" placeholder="Comment on this recipe..."></textarea>
+
+				<label class="checkboxLabel"><input type="checkbox" class="checkboxInput" name="checkboxInput" value="Checkbox">Checkbox</label>
+				<label class="radioLabel"><input type="radio" class="radioInput" name="radioInput" value="Radio">Radio Button</label>
   </article>
   
 
