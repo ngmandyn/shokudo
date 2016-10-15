@@ -253,9 +253,37 @@
 			<h4 class="pageHead4" id="main-nav">Main Navigation</h4>
 				<div class="mainNavBarDemo">
 					<a href="" id="logoNavDemo"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a>
-					<a href="" class="navItem">Breakfast</a>
-					<a href="" class="navItem">Lunch</a>
-					<a href="" class="navItem">Dinner</a>
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">ALL RECIPES &#9660</button>
+						  <div id="myDropdown" class="dropdown-content">
+						    <a href="#">BREAKFAST</a>
+						    <a href="#">LUNCH</a>
+						    <a href="#">DINNER</a>
+						  </div>
+				    </div>
+
+				    <script>
+					function myFunction() {
+					    document.getElementById("myDropdown").classList.toggle("show");
+					}
+
+					window.onclick = function(event) {
+					  if (!event.target.matches('.dropbtn')) {
+
+					    var dropdowns = document.getElementsByClassName("dropdown-content");
+					    var i;
+					    for (i = 0; i < dropdowns.length; i++) {
+					      var openDropdown = dropdowns[i];
+					      if (openDropdown.classList.contains('show')) {
+					        openDropdown.classList.remove('show');
+					      }
+					    }
+					  }
+					}
+					</script>
+
+
+					<a href="" class="navItem">SHOP</a>
 				</div> 	
 	
 			<h4 class="pageHead4" id="prod-list">Product Listing</h4>
