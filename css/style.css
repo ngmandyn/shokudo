@@ -83,14 +83,28 @@ header {
   padding-top: 2em;
   overflow: hidden;
 }
+*/
 
-.h5demo {
-  font-size: 1.35em;
-  color: #7351b4;
-  padding: 0 0 0 2vw;
-  margin-bottom: 1em;
+.h2demo {
+  font-size: 1.8em;
 }
 
+.h3demo {
+  font-size: 1.5em;
+  overflow: hidden;
+}
+
+.h4demo {
+  color: #886f5b;
+  font-size: 1.3em;
+  overflow: hidden;
+}
+
+.h5demo {
+  font-size: 1.1em;
+}
+
+/*
 .paraOpen {
   font-family: 'SanFranciscoDisplay-Regular', sans-serif;
   font-size: 1.3em;
@@ -873,7 +887,6 @@ input[type=checkbox], input[type=radio] {
   color: #886f5b;
 }
 
-
 .toggle-label {
   display: block;
   margin-bottom: 0em;
@@ -1087,7 +1100,7 @@ input[type=checkbox], input[type=radio] {
 
 .link {
   font-size: 1.15em;
-  color: steelblue;
+  color: steetblue;
   text-decoration: none;
   border-bottom: thin solid;
 }
@@ -1169,3 +1182,9 @@ input[type=checkbox], input[type=radio] {
 .checkboxLabel:hover, .radioLabel:hover {
   cursor: pointer;
 }
+
+hr {
+  margin-top: 2em;
+  border: 1px solid #ddd;
+}
+
