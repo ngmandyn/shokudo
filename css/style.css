@@ -297,7 +297,7 @@ header {
 .stickyAside {
   position: fixed;
   display: inherit;
-  top: 3.2em;
+  top: 3.5em;
   right: 0;
   width: 33vw;
 }
@@ -418,7 +418,6 @@ header {
 }
 
 .button {
-  width: 100%;
   color: #555;
   letter-spacing: 0.02em;
   padding: 0.5em 0.8em 0.5em 0.8em;
@@ -429,7 +428,6 @@ header {
   border-radius: 0.15em;
   background: -webkit-linear-gradient(top,  #f0f0f0 0%, #cccccc 100%);
   margin-right: 0.5em;
-  margin-left: 2vw;
   font-size: 1.1em;
 }
 
@@ -888,6 +886,21 @@ input[type=checkbox], input[type=radio] {
   display: none;
 }
 
+.code {
+    margin-bottom: 1em;
+    margin-top: 0.8em;
+    margin-right: 2vw;
+    background: #e5e5e5;
+    padding: 0.8em;
+}
+
+.toggle-input:not(checked) ~ .code {
+    display: none;
+}
+.toggle-input:checked ~ .code {       
+    display: block;
+}
+
 .button {
   letter-spacing: 0.07em;
   padding: 0.45em 0.7em 0.45em 0.7em;
@@ -924,6 +937,20 @@ input[type=checkbox], input[type=radio] {
   border-left: thin solid #95ae6f;
   border-bottom: 0.15em solid #95ae6f;
   background: #a3bd7c;
+}
+
+.button-icon-submit {
+
+}
+
+.button.cta.add {
+
+}
+
+.button-icon-add {
+    background: url('../img/icon-cart.png') no-repeat;
+    width: 22px;
+    padding-left: 20px;
 }
 
 .button.prim:hover {
@@ -1121,7 +1148,7 @@ input[type=checkbox], input[type=radio] {
   line-height: 1.6em;
   margin-bottom: 1em;
   padding: 0.3em 0.5em 0.3em 0.5em;
-  width: 25em;
+  width: 20em;
 }
 
 input[type=checkbox], input[type=radio] {

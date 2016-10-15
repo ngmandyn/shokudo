@@ -86,7 +86,6 @@
 					    </div>
 				    </div>
 
-
 		<h3 class="pageHead3" id="interactive">Interactive Elements</h3>
 			<h4 class="pageHead4" id="buttons">Buttons</h4>
 					<button class="button standard">Standard</button>
@@ -94,7 +93,22 @@
 					<button class="button cta">Call to Action</button>
 					<button class="button cancel">Cancel</button>
 					<button class="button disabled">Disabled</button>
-
+					<code class="code">
+			    	&lt;!-- HTML --&gt; <br>
+					&lt;button class=&quot;button&quot;&gt;Standard&lt;/button&gt; <br>
+					&lt;button class=&quot;button-prim&quot;&gt;Primary Action&lt;/button&gt; <br>
+					&lt;button class=&quot;button-cta&quot;&gt;Call to Action&lt;/button&gt; <br>
+					&lt;button class=&quot;button-cancel&quot;&gt;Cancel&lt;/button&gt; <br>
+					&lt;button class=&quot;button-dis&quot;&gt;Disabled&lt;/button&gt;			    	
+					</code>
+					<code class="code">
+			    	&lt;!-- HTML --&gt; <br>
+					&lt;button class=&quot;button&quot;&gt;Standard&lt;/button&gt; <br>
+					&lt;button class=&quot;button-prim&quot;&gt;Primary Action&lt;/button&gt; <br>
+					&lt;button class=&quot;button-cta&quot;&gt;Call to Action&lt;/button&gt; <br>
+					&lt;button class=&quot;button-cancel&quot;&gt;Cancel&lt;/button&gt; <br>
+					&lt;button class=&quot;button-dis&quot;&gt;Disabled&lt;/button&gt;			    	
+					</code>					
 			<h4 class="pageHead4" id="links">Links</h4>
 
 				<a href="" class="link">Standard In-text Link</a>
@@ -110,16 +124,16 @@
 				<label class="formLabel">Dropdown Menu</label>
 					<select class="dropdownInput" name="recipe" id="recipe">
 						<optgroup label="Breakfast">
-						    <option value="Chequing">Pancakes</option>
-						    <option value="Saving">Cereal</option>
+						    <option value="Pancakes">Pancakes</option>
+						    <option value="Cereal">Cereal</option>
 						</optgroup>
 						<optgroup label="Lunch">
-							<option value="Visa">Sandwich</option>
-						 	<option value="Mastercard">Wrap</option>
+							<option value="Sandwich">Sandwich</option>
+						 	<option value="Wrap">Wrap</option>
 						</optgroup>
 						<optgroup label="Dinner">
-							<option value="Visa">Steak</option>
-						 	<option value="Mastercard">Seafood</option>
+							<option value="Steak">Steak</option>
+						 	<option value="Seafood">Seafood</option>
 						</optgroup>
 					</select>
 
@@ -129,7 +143,8 @@
 				<label class="checkboxLabel"><input type="checkbox" class="checkboxInput" name="checkboxInput" value="Checkbox">Checkbox</label>
 				<label class="radioLabel"><input type="radio" class="radioInput" name="radioInput" value="Radio">Radio Button</label>
 
-
+				<button class="button prim submit"><span class="button-icon">Submit</span></button>
+				<button class="button standard reset"><span class="button-icon">Reset</span></button>
 
 	     <h3 class="pageHead3" id="text">Text Elements</h3>
 		 	<h4 class="pageHead4" id="headings">Headings</h4>
@@ -162,8 +177,6 @@
 		
 
 
-
-
 		<h3 class="pageHead3" id="combined">Combined Elements</h3>
 			<h4 class="pageHead4" id="main-nav">Main Navigation</h4>
 				<div class="mainNavBarDemo">
@@ -181,7 +194,7 @@
 						<p class="para">10g</p>
 						<p class="ProdPrice">0.99</p>
 						<p></p>
-						<button class="button">ADD</button>
+						<button class="button cta add"><span class="button-icon-add">Add</span></button>
 				</div>
 		
   </article>
