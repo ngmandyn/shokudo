@@ -95,7 +95,7 @@ header {
 }
 
 .h4demo {
-  color: #886f5b;
+  color: #95AE6F;
   font-size: 1.3em;
   overflow: hidden;
 }
@@ -1188,3 +1188,8 @@ hr {
   border: 1px solid #ddd;
 }
 
+.line2 {
+  border: 1px solid #ddd;
+  margin-top: 12em;
+
+}
