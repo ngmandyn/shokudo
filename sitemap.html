@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Sitemap | Shokudo</title>
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/normalize.css"> 
+  </head>
+
+  <body>
+  
+	<header>
+		<img src="img/logo-shokudo-r.png" class="headerLogo" alt="Shokudo Logo">
+		<img class ="headerBg" src="img/banner-styleGuide.png" alt="Powdered spices on stone tableware">
+	</header>
+	
+	<nav class="mainNav">
+		<a href="index.html" class="navItem">Style Guide</a>
+		<a href="sitemap.html" class="navItem curNavItem">Sitemap</a>
+		<a href="citations.html" class="navItem">Citations</a>
+		<a href="" id="logoNav"><img src="img/logo-shokudo.png" alt="Shokudo Logo"></a>
+	</nav> 
+
+<section class="wrap">
+  
+  <img src="img/sitemap.png" alt="Sitemap" class="sitemap">
+
+</section>
+  
+				    <script>
+					function myFunction() {
+					    document.getElementById("myDropdown").classList.toggle("show");
+					}
+
+					window.onclick = function(event) {
+					  if (!event.target.matches('.dropbtn')) {
+
+					    var dropdowns = document.getElementsByClassName("dropdown-content");
+					    var i;
+					    for (i = 0; i < dropdowns.length; i++) {
+					      var openDropdown = dropdowns[i];
+					      if (openDropdown.classList.contains('show')) {
+					        openDropdown.classList.remove('show');
+					      }
+					    }
+					  }
+					}
+					</script>
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script>
+		var stickyNavTop = $('nav').offset().top;		 
+		var stickyNav = function(){
+		var scrollTop = $(window).scrollTop();			  
+		if (scrollTop > stickyNavTop) { 
+			$('nav').addClass('sticky');	
+			$('aside').addClass('stickyAside');
+			document.getElementById("logoNav").style.visibility = "visible";
+			} else {
+			$('nav').removeClass('sticky'); 
+			$('aside').removeClass('stickyAside');
+			document.getElementById("logoNav").style.visibility = "hidden";
+			}
+		};
+		stickyNav();		 
+		$(window).scroll(function() {
+			stickyNav();
+		});	
+	</script>
+	
+  </body>
+  
+</html>

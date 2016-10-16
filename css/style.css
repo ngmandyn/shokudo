@@ -576,7 +576,7 @@ header {
   }  
 
 .link {
-  font-size: 1.15em;
+  font-size: 1em;
   color: #95ae6f;
   text-decoration: none;
   border-bottom: thin solid;
@@ -755,4 +755,10 @@ hr {
     text-align: center;
   background-color: #95AE6F;
   opacity: 0.6;
+}
+
+.sitemap {
+  width: 100%;
+  padding: 1vw 2.5vw 0 2.5vw;
+  box-sizing: border-box;
 }
