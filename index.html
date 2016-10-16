@@ -24,43 +24,43 @@
 
 <section class="wrap">
   
-  <aside class="sidebar">
-	<ol class="sidebarNav">
-		<li><a href="#color" class="sidebarLink">Colour Palette</a></li>
-		<li>
-			<ol class="sidebarNavSub">
-				<li><a href="#core" class="sidebarLink">Core Colours</a></li>
-				<li><a href="#supplementary" class="sidebarLink">Supplementary Colours</a></li>
-			</ol>
-		<li><a href="#interactive" class="sidebarLink">Interactive Elements</a></li>
-		<li>
-			<ol class="sidebarNavSub">
-				<li><a href="#buttons" class="sidebarLink">Buttons</a></li>
-				<li><a href="#links" class="sidebarLink">Links</a></li>
-				<li><a href="#forms" class="sidebarLink">Forms</a></li>
-			</ol>
-		</li>
-		<li><a href="#text" class="sidebarLink">Text Elements</a></li>
-		<li>	
-			<ol class="sidebarNavSub">
-				<li><a href="#headings" class="sidebarLink">Headings</a></li>
-				<li><a href="#para" class="sidebarLink">Paragraphs</a></li>
-				<li><a href="#lists" class="sidebarLink">Lists</a></li>
-				<li><a href="#quotes" class="sidebarLink">Pull Quotes</a></li>
-			</ol>
-		</li>
-		<li><a href="#combined" class="sidebarLink">Combined Elements</a></li>
-		<li>
-			<ol class="sidebarNavSub">
-				<li><a href="#main-nav" class="sidebarLink">Main Navigation</a></li>
-				<li><a href="#prod-list" class="sidebarLink">Product Listing</a></li>
-				<li><a href="#grids" class="sidebarLink">Grid Structure</a></li>
-			</ol>
-		</li>
+    <aside class="sidebar">
+		<ol class="sidebarNav">
+			<li><a href="#color" class="sidebarLink">Colour Palette</a></li>
+			<li>
+				<ol class="sidebarNavSub">
+					<li><a href="#core" class="sidebarLink">Core Colours</a></li>
+					<li><a href="#supplementary" class="sidebarLink">Supplementary Colours</a></li>
+				</ol>
+			<li><a href="#interactive" class="sidebarLink">Interactive Elements</a></li>
+			<li>
+				<ol class="sidebarNavSub">
+					<li><a href="#buttons" class="sidebarLink">Buttons</a></li>
+					<li><a href="#links" class="sidebarLink">Links</a></li>
+					<li><a href="#forms" class="sidebarLink">Forms</a></li>
+				</ol>
+			</li>
+			<li><a href="#text" class="sidebarLink">Text Elements</a></li>
+			<li>	
+				<ol class="sidebarNavSub">
+					<li><a href="#headings" class="sidebarLink">Headings</a></li>
+					<li><a href="#para" class="sidebarLink">Paragraphs</a></li>
+					<li><a href="#lists" class="sidebarLink">Lists</a></li>
+					<li><a href="#quotes" class="sidebarLink">Pull Quotes</a></li>
+				</ol>
+			</li>
+			<li><a href="#combined" class="sidebarLink">Combined Elements</a></li>
+			<li>
+				<ol class="sidebarNavSub">
+					<li><a href="#main-nav" class="sidebarLink">Main Navigation</a></li>
+					<li><a href="#prod-list" class="sidebarLink">Product Listing</a></li>
+					<li><a href="#grids" class="sidebarLink">Grid Structure</a></li>
+				</ol>
+			</li>
 		</ol>
-  </aside>
+    </aside>
   
-  <article class="content">
+    <article class="content">
 
 	<h1 class="pageHead1">Our Style Guide</h1>
 		<p class="paraOpen">This Style Guide is used by Shokudo to ensure visual consistency across our websites, marketing, communications, and products. </p>
@@ -69,9 +69,9 @@
 
 		<hr>
 
-		 <h2 class="pageHead2" id="color">Colour Palette</h2>
+		<h2 class="pageHead2" id="color">Colour Palette</h2>
+
 		 	<h3 class="pageHead3" id="core">Core Colours</h3>
-		 		<p></p>
 					<div class="colours">
 					    <div class="row-2 clear">
 					    	<div class="col-1-2 matcha">Matcha<br>#95ae6f</div>
@@ -89,10 +89,9 @@
 					    </div>
 				    </div>
 
-
         <hr>
 
-		 <h2 class="pageHead2" id="interactive">Interactive Elements</h3>
+		<h2 class="pageHead2" id="interactive">Interactive Elements</h3>
 
 			<h3 class="pageHead3" id="buttons">Buttons</h3>
 				<button class="button standard">Standard</button>
@@ -140,117 +139,369 @@
 				</code>	
 
 			<h3 class="pageHead3" id="links">Links</h4>
+
 				<a href="" class="link">Standard In-text Link</a>
-				<a href="" class="link">In-text External Link</a>
-				<a href="" class="sidebarLink">Sidebar Link</a>
+					<p class="para">CSS Selector: .link</p>
+					<code class="code">
+				    	&lt;!-- HTML --&gt; <br>
+						&lt;a href=&quot;&quot; class=&quot;link&quot;&gt;Standard In-text Link&lt;/a&gt; 	
+					</code>
+					<code class="code">
+				    	/* CSS */ <br>
+						.link { <br>
+						  &nbsp;&nbsp;font-size: 1.15em; <br>
+						  &nbsp;&nbsp;color: #95ae6f; <br>
+						  &nbsp;&nbsp;text-decoration: none; <br>
+						  &nbsp;&nbsp;border-bottom: thin solid; <br>
+						} <br>
+						.link:hover { <br>
+						  &nbsp;&nbsp;color: #000; <br>
+						  &nbsp;&nbsp;transition: color 0.2s ease; <br>
+						}
+					</code>
+
+				<a href="" class="link external">In-text External Link</a>
+					<p class="para">CSS Selector: .external</p>
+					<code class="code">
+				    	&lt;!-- HTML --&gt; <br>
+						&lt;a href=&quot;&quot; class=&quot;link external&quot;&gt;In-text External Link&lt;/a&gt;
+					</code>
+					<code class="code">
+				    	/* CSS */ <br>
+						.external:after { <br>
+						   &nbsp;&nbsp;display: inline-block; <br>
+						   &nbsp;&nbsp;-webkit-transform: matrix(-1, 0, 0, 1, 0, 0); <br>
+						   &nbsp;&nbsp;-moz-transform: matrix(-1, 0, 0, 1, 0, 0); <br>
+						   &nbsp;&nbsp;-o-transform: matrix(-1, 0, 0, 1, 0, 0); <br>
+						   &nbsp;&nbsp;transform: matrix(-1, 0, 0, 1, 0, 0); <br>
+						   &nbsp;&nbsp;content: "⇱"; <br>
+						   &nbsp;&nbsp;margin-left: 0.1em; <br>
+						}
+					</code>
+
+				<a href="" class="readmoreLink">Read More Link</a>
+					<p class="para">CSS Selector: .readmoreLink</p>
+					<code class="code">
+				    	&lt;!-- HTML --&gt; <br>
+						&lt;a href=&quot;&quot; class=&quot;readmoreLink&quot;&gt;Read More Link&lt;/a&gt;
+					</code>
+					<code class="code">
+				    	/* CSS */ <br>
+						.readmoreLink { <br>
+						  &nbsp;&nbsp;color: #c86726; <br>
+						  &nbsp;&nbsp;text-decoration: none; <br>
+						  &nbsp;&nbsp;text-transform: uppercase; <br>
+						  &nbsp;&nbsp;letter-spacing: 0.1em; <br>
+						  &nbsp;&nbsp;font-size: 1.1em; <br>
+						  &nbsp;&nbsp;font-weight: 600; <br>
+						} <br>
+						.readmoreLink:after { <br>
+						  &nbsp;&nbsp;content: "►"; <br>
+						  &nbsp;&nbsp;margin-left: 0.5em; <br>
+						  &nbsp;&nbsp;font-size: 0.7em; <br>
+						  &nbsp;&nbsp;vertical-align: middle; <br>
+						} <br>
+						.readmoreLink:hover { <br>
+						  &nbsp;&nbsp;border-bottom: thin solid #c86726; <br>
+						}
+					</code>
+
+				<a href="" class="sidebarLink-margin">Sidebar Link</a>
+					<p class="para">CSS Selector: .sidebarLink</p>
+					<code class="code">
+				    	&lt;!-- HTML --&gt; <br>
+						&lt;a href=&quot;&quot; class=&quot;sidebarLink&quot;&gt;Sidebar Link&lt;/a&gt;
+					</code>
+					<code class="code">
+				    	/* CSS */ <br>
+						.sidebarLink { <br>
+						  &nbsp;&nbsp;font-size: 1.1em; <br>
+						  &nbsp;&nbsp;color: #886f5b; <br>
+						  &nbsp;&nbsp;text-decoration: none; <br>
+						} <br>
+						.sidebarLink:hover { <br>
+						  &nbsp;&nbsp;color: #000; <br>
+						  &nbsp;&nbsp;border-bottom: thin solid #000; <br>
+						  &nbsp;&nbsp;transition: color 0.2s ease; <br>
+						} <br>
+					</code>
 
 			<h3 class="pageHead3" id="forms">Forms</h4>
 
 				<label class="formLabel">Text Input</label>
-				<input class="textInput" type="text" id="form-subject" placeholder="Text Input Field">
-				<p class="para">.formLabel (label).textInput</p>
+				<input class="textInput" type="text" id="form-input" placeholder="Text Input Field">
+				<p class="para">CSS Selectors: .formLabel (label), .textInput (input field)</p>
 				<code class="code">
 			    	&lt;!-- HTML --&gt; <br>
-					&lt;button class=&quot;button standard&quot;&gt;Standard&lt;/button&gt; <br>
-					&lt;button class=&quot;button prim&quot;&gt;Primary Action&lt;/button&gt; <br>
-					&lt;button class=&quot;button cta&quot;&gt;Call to Action&lt;/button&gt; <br>
-					&lt;button class=&quot;button cancel&quot;&gt;Cancel&lt;/button&gt; <br>
-					&lt;button class=&quot;button disabled&quot;&gt;Disabled&lt;/button&gt;		    	
+					&lt;label class=&quot;formLabel&quot;&gt;Text Input&lt;/label&gt; <br>
+					&lt;input class=&quot;textInput&quot; type=&quot;text&quot; id=&quot;form-subject&quot; placeholder=&quot;Text Input Field&quot;&gt    	
 				</code>
 				<code class="code">
-			    	/* Sample CSS (for Standard Button) */ <br>
-						.button { <br>
-						  &nbsp;&nbsp;letter-spacing: 0.07em; <br>
-						  &nbsp;&nbsp;padding: 0.45em 0.7em 0.45em 0.7em; <br>
-						  &nbsp;&nbsp;border-radius: 0.4em; <br>
-						  &nbsp;&nbsp;font-size: 1.1em; <br>
-						  &nbsp;&nbsp;font-weight: 600; <br>
-						  &nbsp;&nbsp;margin-right: 0.5em; <br>
-						  &nbsp;&nbsp;margin-bottom: 0.5em; <br>
-						  &nbsp;&nbsp;text-transform: uppercase; <br>
-						} <br>
-						.standard { <br>
-						  &nbsp;&nbsp;color: #555; <br>
-						  &nbsp;&nbsp;border-top: thin solid #ccc; <br>
-						  &nbsp;&nbsp;border-right: thin solid #ccc; <br>
-						  &nbsp;&nbsp;border-left: thin solid #ccc; <br>
-						  &nbsp;&nbsp;border-bottom: 0.15em solid #ccc; <br>
-						  &nbsp;&nbsp;background: #f0f0f0; <br>
-						} <br>
-						.button.standard:hover { <br>
-						  &nbsp;&nbsp;background: #e5e5e5; <br>
-						  &nbsp;&nbsp;border-top: thin solid #aaa; <br>
-						  &nbsp;&nbsp;border-right: thin solid #aaa; <br>
-						  &nbsp;&nbsp;border-left: thin solid #aaa; <br>
-						  &nbsp;&nbsp;border-bottom: 0.15em solid #aaa; <br>
-						  &nbsp;&nbsp;cursor: pointer; <br>
-						}	    	
+			    	/* CSS */ <br>
+					.formLabel { <br>
+					  &nbsp;&nbsp;font-size: 1.15em; <br>
+					  &nbsp;&nbsp;line-height: 1.6em; <br>
+					  &nbsp;&nbsp;width: 8em; <br>
+					  &nbsp;&nbsp;display: inline-block; <br>
+					  &nbsp;&nbsp;vertical-align: middle; <br>
+					} <br>
+					.textInput { <br>
+					  &nbsp;&nbsp;display: block; <br>
+					  &nbsp;&nbsp;font-size: 1.15em; <br>
+					  &nbsp;&nbsp;line-height: 1.6em; <br>
+					  &nbsp;&nbsp;vertical-align: middle; <br>
+					  &nbsp;&nbsp;padding: 0.3em 0.5em 0.3em 0.5em; <br>
+					  &nbsp;&nbsp;border: thin solid #aaa; <br>
+					  &nbsp;&nbsp;border-radius: 0.3em; <br>
+					  &nbsp;&nbsp;width: 15em; <br>
+					  &nbsp;&nbsp;height: 2.3em; <br>
+					  &nbsp;&nbsp;background: #fafafa; <br>
+					  &nbsp;&nbsp;margin-bottom: 0.5em; <br>
+					}
 				</code>	
 
-
 				<label class="formLabel">Dropdown Menu</label>
-					<select class="dropdownInput" name="recipe" id="recipe">
-						<optgroup label="Breakfast">
-						    <option value="Pancakes">Pancakes</option>
-						    <option value="Cereal">Cereal</option>
-						</optgroup>
-						<optgroup label="Lunch">
-							<option value="Sandwich">Sandwich</option>
-						 	<option value="Wrap">Wrap</option>
-						</optgroup>
-						<optgroup label="Dinner">
-							<option value="Steak">Steak</option>
-						 	<option value="Seafood">Seafood</option>
-						</optgroup>
-					</select>
+				<select class="dropdownInput" name="recipe" id="recipe">
+					<optgroup label="Breakfast">
+					    <option value="Pancakes">Pancakes</option>
+					    <option value="Cereal">Cereal</option>
+					</optgroup>
+					<optgroup label="Lunch">
+						<option value="Sandwich">Sandwich</option>
+					 	<option value="Wrap">Wrap</option>
+					</optgroup>
+					<optgroup label="Dinner">
+						<option value="Steak">Steak</option>
+					 	<option value="Seafood">Seafood</option>
+					</optgroup>
+				</select>
+				<p class="para">CSS Selectors: .formLabel (label), .dropdownInput (input field)</p>
+				<code class="code">
+			    	&lt;!-- HTML --&gt; <br>
+					&lt;label class=&quot;formLabel&quot;&gt;Dropdown Menu&lt;/label&gt; <br>
+					&lt;select class=&quot;dropdownInput&quot; name=&quot;recipe&quot; id=&quot;recipe&quot;&gt; <br>
+						&nbsp;&nbsp;&lt;optgroup label=&quot;Breakfast&quot;&gt; <br>
+						    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;Pancakes&quot;&gt;Pancakes&lt;/option&gt; <br>
+						    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;Cereal&quot;&gt;Cereal&lt;/option&gt; <br>
+						&nbsp;&nbsp;&lt;/optgroup&gt; <br>
+						&nbsp;&nbsp;&lt;optgroup label=&quot;Lunch&quot;&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;Sandwich&quot;&gt;Sandwich&lt;/option&gt; <br>
+						 	&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;Wrap&quot;&gt;Wrap&lt;/option&gt; <br>
+						&nbsp;&nbsp;&lt;/optgroup&gt; <br>
+						&nbsp;&nbsp;&lt;optgroup label=&quot;Dinner&quot;&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;Steak&quot;&gt;Steak&lt;/option&gt; <br>
+						 	&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;Seafood&quot;&gt;Seafood&lt;/option&gt; <br>
+						&nbsp;&nbsp;&lt;/optgroup&gt; <br>
+					&lt;/select&gt;  	
+				</code>
+				<code class="code">
+			    	/* CSS */ <br>
+					.dropdownInput { <br>
+					  &nbsp;&nbsp;display: block; <br>
+					  &nbsp;&nbsp;font-size: 1.15em; <br>
+					  &nbsp;&nbsp;line-height: 1.6em; <br>
+					  &nbsp;&nbsp;vertical-align: middle; <br>
+					  &nbsp;&nbsp;padding: 0.3em 0.5em 0.3em 0.5em; <br>
+					  &nbsp;&nbsp;border: thin solid #aaa; <br>
+					  &nbsp;&nbsp;border-radius: 0.15em; <br>
+					  &nbsp;&nbsp;width: 15em; <br>
+					  &nbsp;&nbsp;height: 2.3em; <br>
+					  &nbsp;&nbsp;background: #fafafa; <br>
+					  &nbsp;&nbsp;margin-bottom: 1em; <br>
+					}
+				</code>		
 
 				<label class="formLabel">Text Area</label>
 				<textarea class="textArea" placeholder="Comment on this recipe..."></textarea>
+				<p class="para">CSS Selectors: .formLabel (label), .textArea (text area)</p>
+				<code class="code">
+			    	&lt;!-- HTML --&gt; <br>
+					&lt;label class=&quot;formLabel&quot;&gt;Text Area&lt;/label&gt; <br>
+					&lt;textarea class=&quot;textArea&quot; placeholder=&quot;Comment on this recipe...&quot;&gt;&lt;/textarea&gt;
+				</code>
+				<code class="code">
+			    	/* CSS */ <br>
+					.textArea { <br>
+					  &nbsp;&nbsp;background: #fafafa; <br>
+					  &nbsp;&nbsp;display: block; <br>
+					  &nbsp;&nbsp;border: thin solid #aaa; <br>
+					  &nbsp;&nbsp;border-radius: 0.3em; <br>
+					  &nbsp;&nbsp;font-size: 1.15em; <br>
+					  &nbsp;&nbsp;line-height: 1.6em; <br>
+					  &nbsp;&nbsp;margin-bottom: 1em; <br>
+					  &nbsp;&nbsp;padding: 0.3em 0.5em 0.3em 0.5em; <br>
+					  &nbsp;&nbsp;width: 20em; <br>
+					}
+				</code>		
 
 				<label class="checkboxLabel"><input type="checkbox" class="checkboxInput" name="checkboxInput" value="Checkbox">Checkbox</label>
 				<label class="radioLabel"><input type="radio" class="radioInput" name="radioInput" value="Radio">Radio Button</label>
 
-				<button class="button prim submit"><span class="button-icon">Submit</span></button>
-				<button class="button standard reset"><span class="button-icon">Reset</span></button>
+				<button class="button prim submit">&#10003; Submit</button>
+				<button class="button standard reset">&#x21BA; Reset</button>
 
         <hr>
 
-	     <h2 class="pageHead2" id="text">Text Elements</h2>
+	    <h2 class="pageHead2" id="text">Text Elements</h2>
+
 		 	<h3 class="pageHead3" id="headings">Headings</h3>
-					<h1 class="pageHead1">Heading Level 1</h1>
-					<h2 class="pageHead2">Heading Level 2</h2>
-					<h3 class="pageHead3">Heading Level 3</h3>
-					<h4 class="pageHead4">Heading Level 4</h4>
+				<h1 class="pageHead1">Heading Level 1</h1>
+				<h2 class="pageHead2">Heading Level 2</h2>
+				<h3 class="pageHead3">Heading Level 3</h3>
+				<h4 class="pageHead4">Heading Level 4</h4>
+				<p class="para">CSS Selectors: .pageHead1, .pageHead2, .pageHead3, .pageHead4</p>
+				<code class="code">
+			    	&lt;!-- HTML --&gt; <br>
+					&lt;h1 class=&quot;pageHead1&quot;&gt;Heading Level 1&lt;/h1&gt; <br>
+					&lt;h2 class=&quot;pageHead2&quot;&gt;Heading Level 2&lt;/h2&gt; <br>
+					&lt;h3 class=&quot;pageHead3&quot;&gt;Heading Level 3&lt;/h3&gt; <br>
+					&lt;h4 class=&quot;pageHead4&quot;&gt;Heading Level 4&lt;/h4&gt; <br>
+				</code>
+				<code class="code">
+			    	/* CSS */ <br>
+					.pageHead1 { <br>
+					  &nbsp;&nbsp;letter-spacing: 0.05vw; <br>
+					  &nbsp;&nbsp;font-size: 2em; <br>
+					  &nbsp;&nbsp;color: #332a22; <br>
+					  &nbsp;&nbsp;padding-top: 0.5em; <br>
+					} <br>
+					.pageHead2 { <br>
+					  &nbsp;&nbsp;font-size: 1.7em; <br>
+					  &nbsp;&nbsp;color: #886f5b; <br>
+					  &nbsp;&nbsp;padding-top: 0.5em; <br>
+					} <br>
+					.pageHead3 { <br>
+					  &nbsp;&nbsp;padding-top: 0.5em; <br>
+					  &nbsp;&nbsp;font-size: 1.5em; <br>
+					  &nbsp;&nbsp;color: #332a22; <br>
+					} <br>
+					.pageHead4 { <br>
+					  &nbsp;&nbsp;color: #886f5b; <br>
+					  &nbsp;&nbsp;font-size: 1.3em; <br>
+					  &nbsp;&nbsp;padding-top: 0.5em; <br>
+					}
+				</code>
 
 			<h3 class="pageHead3" id="para">Paragraphs</h4>
-					<h4 class="pageHead4">Opening Paragraph</h4>
-						<p class="paraOpen">This is an opening paragraph. This styling is used to denote the first paragraph of a section of content. Its font size is slightly larger than a standard paragraph and different in colour.</p>
-				
-					<h4 class="pageHead4">Standard Paragraph</h4>
-						<p class="para">This is a standard paragraph. It follows an opening paragraph in a section of content. Its font size is slightly smaller than an opening paragraph and is different in colour.</p>
+				<h4 class="pageHead4">Opening Paragraph</h4>
+				<p class="paraOpen">This is an opening paragraph. This styling is used to denote the first paragraph of a section of content. Its font size is slightly larger than a standard paragraph and different in colour.</p>
+				<p class="para">CSS Selector: .paraOpen</p>
+				<code class="code">
+			    	&lt;!-- HTML --&gt; <br>
+					&lt;p class=&quot;paraOpen&quot;&gt;This is an opening paragraph. This styling is used to denote the first paragraph of a section of content. Its font size is slightly larger than a standard paragraph and different in colour.&lt;/p&gt;
+				</code>
+				<code class="code">
+			    	/* CSS */ <br>
+					.paraOpen { <br>
+					  &nbsp;&nbsp;font-size: 1.2em; <br>
+					  &nbsp;&nbsp;line-height: 1.5em; <br>
+					  &nbsp;&nbsp;color: #886f5b; <br>
+					}
+				</code>
+
+				<h4 class="pageHead4">Standard Paragraph</h4>
+				<p class="para">This is a standard paragraph. It follows an opening paragraph in a section of content. Its font size is slightly smaller than an opening paragraph and is different in colour.</p>
+				<p class="para">CSS Selector: .para</p>
+				<code class="code">
+			    	&lt;!-- HTML --&gt; <br>
+					&lt;p class=&quot;para&quot;&gt;This is a standard paragraph. It follows an opening paragraph in a section of content. Its font size is slightly smaller than an opening paragraph and is different in colour.&lt;/p&gt;
+				</code>
+				<code class="code">
+			    	/* CSS */ <br>
+					.para { <br>
+					  &nbsp;&nbsp;color: #332a22; <br>
+					  &nbsp;&nbsp;font-size: 1.1em; <br>
+					  &nbsp;&nbsp;line-height: 1.5em; <br>
+					}
+				</code>
 	
 			<h3 class="pageHead3" id="lists">Lists</h3>
-					<h4 class="pageHead4">Bulleted Lists</h4>	
-						<ul class="uList">
-							<li>Balanced and nutritious recipes</li>
-							<li>Organic, locally sourced ingredients</li>
-							<li>Delivered fresh to your home</li>
-						</ul>
-					
-					<h4 class="pageHead4">Numbered Lists</h4>	
-						<ol class="oList">
-							<li><span>Balanced and nutritious recipes</span></li>
-							<li><span>Organic, locally sourced ingredients</span></li>
-							<li><span>Delivered fresh to your home</span></li>
-						</ol>
+
+				<h4 class="pageHead4">Bulleted Lists</h4>	
+					<ul class="uList">
+						<li>Balanced and nutritious recipes</li>
+						<li>Organic, locally sourced ingredients</li>
+						<li>Delivered fresh to your home</li>
+					</ul>
+					<p class="para">CSS Selector: .uList</p>
+					<code class="code">
+				    	&lt;!-- HTML --&gt; <br>
+						&lt;ul class=&quot;uList&quot;&gt; <br>
+							&nbsp;&nbsp;&lt;li&gt;Balanced and nutritious recipes&lt;/li&gt; <br>
+							&nbsp;&nbsp;&lt;li&gt;Organic, locally sourced ingredients&lt;/li&gt; <br>
+							&nbsp;&nbsp;&lt;li&gt;Delivered fresh to your home&lt;/li&gt; <br>
+						&lt;/ul&gt;
+					</code>
+					<code class="code">
+				    	/* CSS */ <br>
+						.uList li { <br>
+						  &nbsp;&nbsp;display: list-item; <br>
+						  &nbsp;&nbsp;list-style-type: none; <br>
+						  &nbsp;&nbsp;list-style-position: inside; <br>
+						  &nbsp;&nbsp;font-size: 1.1em; <br>
+						  &nbsp;&nbsp;line-height: 1.5em; <br>
+						} <br>
+						.uList li:before { <br>
+						  &nbsp;&nbsp;content: "\25A0"; <br>
+						  &nbsp;&nbsp;color: #886f5b;; <br>
+						  &nbsp;&nbsp;margin-right: 1em; <br>
+						  &nbsp;&nbsp;vertical-align: text-bottom; <br>
+						}
+					</code>
+
+				<h4 class="pageHead4">Numbered Lists</h4>	
+					<ol class="oList">
+						<li><span>Balanced and nutritious recipes</span></li>
+						<li><span>Organic, locally sourced ingredients</span></li>
+						<li><span>Delivered fresh to your home</span></li>
+					</ol>
+					<p class="para">CSS Selector: .oList</p>
+					<code class="code">
+				    	&lt;!-- HTML --&gt; <br>
+						&lt;ol class=&quot;oList&quot;&gt; <br>
+							&lt;li&gt;&lt;span&gt;Balanced and nutritious recipes&lt;/span&gt;&lt;/li&gt; <br>
+							&lt;li&gt;&lt;span&gt;Organic, locally sourced ingredients&lt;/span&gt;&lt;/li&gt; <br>
+							&lt;li&gt;&lt;span&gt;Delivered fresh to your home&lt;/span&gt;&lt;/li&gt; <br>
+						&lt;/ol&gt;
+					</code>
+					<code class="code">
+				    	/* CSS */ <br>
+						.oList li { <br>
+						  &nbsp;&nbsp;display: list-item; <br>
+						  &nbsp;&nbsp;list-style-position: inside; <br>
+						  &nbsp;&nbsp;font-size: 1.1em; <br>
+						  &nbsp;&nbsp;line-height: 1.5em; <br>
+						} <br>
+						.oList li span { <br>
+						  &nbsp;&nbsp;position: relative; <br>
+						  &nbsp;&nbsp;left: 0.5em; <br>
+						}
+					</code>
 
 			<h3 class="pageHead3" id="quotes">Pull Quotes</h3>
-					<div class="pullQuote">Pull quotes are used to make key excerpts from a piece of content stand out. For example, a short excerpt from an article about the importance of buying high-quality fish sauce can be presented in a pull quote.</div>		
+				<div class="pullQuote">Pull quotes are used to make key excerpts from a piece of content stand out. For example, a short excerpt from an article about the importance of buying high-quality fish sauce can be presented in a pull quote.</div>
+				<p class="para">CSS Selector: .pullQuote</p>
+				<code class="code">
+			    	&lt;!-- HTML --&gt; <br>
+					&lt;div class=&quot;pullQuote&quot;&gt;Pull quotes are used to make key excerpts from a piece of content stand out. For example, a short excerpt from an article about the importance of buying high-quality fish sauce can be presented in a pull quote.&lt;/div&gt;
+				</code>
+				<code class="code">
+			    	/* CSS */ <br>
+					.pullQuote { <br>
+					  &nbsp;&nbsp;color: #332a22; <br>
+					  &nbsp;&nbsp;font-size: 1.15em; <br>
+					  &nbsp;&nbsp;line-height: 1.5em; <br>
+					  &nbsp;&nbsp;border-radius: 0.3em; <br>
+					  &nbsp;&nbsp;border-left: 0.25em solid #95AE6F; <br>
+					  &nbsp;&nbsp;border-right: 0.25em solid #95AE6F; <br>
+					  &nbsp;&nbsp;padding: 1em; <br>
+					}
+				</code>		
 		
         <hr>
 
-		 <h3 class="pageHead3" id="combined">Combined Elements</h3>
-			<h4 class="pageHead4" id="main-nav">Main Navigation</h4>
+		<h2 class="pageHead2" id="combined">Combined Elements</h2>
+			<h3 class="pageHead3" id="main-nav">Main Navigation</h3>
 				<div class="mainNavBarDemo">
 					<a href="" id="logoNavDemo"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a>
 					<div class="dropdown">
@@ -261,7 +512,24 @@
 						    <a href="#">DINNER</a>
 						  </div>
 				    </div>
+					<a href="" class="navItem">SHOP</a>
+				</div> 	
+	
+			<h3 class="pageHead3" id="prod-list">Product Listing</h3>
+				<div class="prodList"> 
+					<img src="img/garlic.jpg" alt="garlic">
+						<h3 class="pageHead3 prodHead">Organic Colossal Garlic</h3>
+						<p class="prodNum">Product#: 20165581001</p>
+						<p class="para">10g</p>
+						<p class="ProdPrice">0.99</p>
+						<button class="button cta add"><span class="button-icon-add">Add</span></button>
+				</div>
+		
+  </article>
+  
 
+</section>
+  
 				    <script>
 					function myFunction() {
 					    document.getElementById("myDropdown").classList.toggle("show");
@@ -281,26 +549,6 @@
 					  }
 					}
 					</script>
-
-
-					<a href="" class="navItem">SHOP</a>
-				</div> 	
-	
-			<h4 class="pageHead4" id="prod-list">Product Listing</h4>
-				<div class="prodList"> 
-					<img src="img/garlic.jpg" alt="garlic">
-						<h3 class="pageHead3 prodHead">Organic Colossal Garlic</h3>
-						<p class="prodNum">Product#: 20165581001</p>
-						<p class="para">10g</p>
-						<p class="ProdPrice">0.99</p>
-						<button class="button cta add"><span class="button-icon-add">Add</span></button>
-				</div>
-		
-  </article>
-  
-
-</section>
-  
 
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script>

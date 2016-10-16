@@ -40,7 +40,7 @@ header {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: white;
+  background-color: #FFFFFF;
   color: #886F5B;
   padding: 16px;
   border: none;
@@ -199,7 +199,7 @@ header {
   padding: 1.2vw 0 1.2vw 0;
   margin: 0 0 0 2.5vw;
   box-sizing: border-box;
-  width: 100%;
+  width: 95%;
   font-family: 'SanFranciscoDisplay-Regular', sans-serif;
 }
 
@@ -220,7 +220,21 @@ header {
   text-decoration: none;
 }
 
+.sidebarLink-margin {
+  display: inline-block;
+  font-size: 1.1em;
+  color: #886f5b;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+}
+
 .sidebarLink:hover {
+  color: #000;
+  border-bottom: thin solid #000;
+  transition: color 0.2s ease;
+}
+
+.sidebarLink-margin:hover {
   color: #000;
   border-bottom: thin solid #000;
   transition: color 0.2s ease;
@@ -265,23 +279,19 @@ header {
 }
 
 .pageHead1 {   
-  font-family: 'SanFranciscoDisplay-Regular', sans-serif;
   letter-spacing: 0.05vw; 
   font-size: 2em;
   color: #332a22;
-  margin-top: 0;
   padding-top: 0.5em;
 }
 
 .pageHead2 {
-  font-family: 'SanFranciscoDisplay-Regular', sans-serif;
   font-size: 1.7em;
   color: #886f5b;
   padding-top: 0.5em;
 }
 
 .pageHead3 {
-  font-family: 'SanFranciscoDisplay-Regular', sans-serif;
   padding-top: 0.5em;
   font-size: 1.5em;
   color: #332a22;
@@ -291,20 +301,22 @@ header {
   color: #886f5b;
   font-size: 1.3em;
   padding-top: 0.5em;
-
+  margin-bottom: 0.7em;
 }
 
 .paraOpen {
-  font-family: 'SanFranciscoDisplay-Regular', sans-serif;
   font-size: 1.2em;
   line-height: 1.5em;
   color: #886f5b;
+  margin-bottom: 0.5em;
 }
 
 .para {
   color: #332a22;
   font-size: 1.1em;
   line-height: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0.8em;
 }
 
 .uList li {
@@ -334,7 +346,6 @@ header {
   left: 0.5em;
 }
 
-
 .pullQuote {
   color: #332a22;
   font-size: 1.15em;
@@ -343,6 +354,7 @@ header {
   border-left: 0.25em solid #95AE6F;
   border-right: 0.25em solid #95AE6F;
   padding: 1em;
+  margin-bottom: 0.5em;
 }
 
 .toggle-label {
@@ -378,7 +390,7 @@ header {
   font-size: 1.1em;
   font-weight: 600;
   margin-right: 0.5em;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.5em;
   text-transform: uppercase;
 }
 
@@ -481,10 +493,6 @@ header {
   cursor: not-allowed;
 }
 
-.colours {
-  margin: 0 2vw 0 0vw;
-}
-
 .col-1-2, .col-1-4 { 
   font-size: 2vw;
   margin-bottom: 1.5em; 
@@ -560,11 +568,45 @@ header {
   color: #95ae6f;
   text-decoration: none;
   border-bottom: thin solid;
+  display: inline-block;
+  margin-bottom: 0.5em;
 }
 
 .link:hover {
-    color: #000;
-    transition: color 0.2s ease;
+  color: #000;
+  transition: color 0.2s ease;
+}
+
+.external:after {
+  display: inline-block;
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  content: "⇱";
+  margin-left: 0.1em;
+}
+
+.readmoreLink {
+  color: #c86726;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+
+.readmoreLink:after {
+  content: "►";
+  margin-left: 0.5em;
+  font-size: 0.7em;
+  vertical-align: middle;
+}
+
+.readmoreLink:hover {
+  border-bottom: thin solid #c86726;
 }
 
 .formLabel {
@@ -586,7 +628,7 @@ header {
   width: 15em;
   height: 2.3em;
   background: #fafafa;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -603,7 +645,7 @@ header {
   width: 15em;
   height: 2.3em;
   background: #fafafa;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -616,7 +658,7 @@ header {
   border-radius: 0.3em;
   font-size: 1.15em;
   line-height: 1.6em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   padding: 0.3em 0.5em 0.3em 0.5em;
   width: 20em;
 }
