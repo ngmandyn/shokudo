@@ -170,7 +170,7 @@ header {
   border: thin solid #ddd;
   border-radius: 0.3em;
   padding: 1em;
-  padding-bottom: 5em;
+  padding-bottom: 1em;
   margin: 0 2vw 0 2vw;
 }
 
@@ -189,6 +189,13 @@ header {
 .prodNum {
   font-size: 14px;
   color: #9B9B9B;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.prodPrice {
+  font-size: 1.1em;
+  text-align: center;
 }
 
 .wrap {
@@ -295,6 +302,14 @@ header {
   padding-top: 0.5em;
   font-size: 1.5em;
   color: #332a22;
+}
+
+.pageHead3_prodHead {
+  padding-top: 0.5em;
+  font-size: 1.5em;
+  color: #332a22;
+  margin-bottom: 0em;
+  text-align: center;
 }
 
 .pageHead4 {
@@ -688,3 +703,59 @@ hr {
   width: 100%;
 }
 
+.box1-1 {
+  border: 1em solid #ddd;
+  padding-top: 3em;
+  margin: 0em;
+  width: 100%;
+  height: 70px;
+  background-color: #95AE6F;
+  text-align: center;
+  vertical-align: middle;
+  opacity: 0.6;
+}
+
+
+.box3-4 {
+  border: 1rem solid #ddd;
+  padding-top: 3em;
+  margin-top: 1em;
+  max-width: 75%;
+  height: 70px;
+  background-color: #95AE6F;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.box1-2 {
+  border: 1em solid #ddd;
+  padding-top: 3em;
+  margin-top: 1rem;
+  max-width: 50%;
+  height: 70px;
+  background-color: #95AE6F;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.box1-4 {
+  border: 1em solid #ddd;
+  padding-top: 3em;
+  margin-top: 1em;
+  max-width: 25%;
+  height: 70px;    
+  text-align: center;
+  background-color: #95AE6F;
+  opacity: 0.6;
+}
+
+.box1-8 {
+  border: 1em solid #ddd;
+  padding-top: 3em;
+  margin-top: 1em;
+  max-width: 12.5%;
+  height: 70px;
+    text-align: center;
+  background-color: #95AE6F;
+  opacity: 0.6;
+}
