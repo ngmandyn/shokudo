@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Citations | Shokudo</title>
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/normalize.css"> 
+  </head>
+
+  <body>
+  
+	<header>
+		<img src="img/logo-shokudo-r.png" class="headerLogo" alt="Shokudo Logo">
+		<img class ="headerBg" src="img/banner-styleGuide.png" alt="Powdered spices on stone tableware">
+	</header>
+	
+	<nav class="mainNav">
+		<a href="index.html" class="navItem">Style Guide</a>
+		<a href="sitemap.html" class="navItem">Sitemap</a>
+		<a href="citations.html" class="navItem curNavItem">Citations</a>
+		<a href="" id="logoNav"><img src="img/logo-shokudo.png" alt="Shokudo Logo"></a>
+	</nav> 
+
+<section class="wrap">
+  
+    <aside class="sidebar">
+		<ol class="sidebarNav">
+			<li><a href="#fonts" class="sidebarLink">Fonts</a></li>
+			<li><a href="#images" class="sidebarLink">Images</a></li>
+			<li><a href="#other" class="sidebarLink">Other</a></li>
+		</ol>
+    </aside>
+  
+    <article class="content">
+
+	<h1 class="pageHead1">Citations</h1>
+
+		<p class="paraOpen">We acknowledge and are thankful for the work of the following:</p>
+
+		<hr>
+
+		<h2 class="pageHead2" id="fonts">Fonts</h2>
+			<p class="para">Apple Inc. Designer. 2014. <em>San Francisco</em> [Font]. Retrieved from <a href="https://developer.apple.com/fonts/" class="link">https://developer.apple.com/fonts/</a></p>
+            <p class="para">Ludlow, Dennis. Designer. 2016. <em>Café Françoise</em> [Font]. Retrieved from <a href="http://www.1001fonts.com/cafe-francoise-font.html" class="link">http://www.1001fonts.com/cafe-francoise-font.html</a></p>
+
+        <hr>
+
+		<h2 class="pageHead2" id="images">Images</h3>
+			<p class="para">Holistic Health Journal. Publisher. 2013. <em>Garlic</em> [Image]. Retrieved from <a href="http://holistichealthjournal.me/wp-content/uploads/2013/11/Garlic-1-Ale-Paiva-sxc.jpg" class="link">http://holistichealthjournal.me/wp-content/uploads/2013/11/Garlic-1-Ale-Paiva-sxc.jpg</a></p>
+			<p class="para">Tsujiri. Creator. 2015. <em>Loose Leaf Tea on Stone Tableware</em> [Image]. Retrieved from <a href="http://tsujiri-global.com/" class="link">http://tsujiri-global.com/</a></p>
+			<p class="para">useiconic.com. Creator. n.d. <em>Code</em> [Icon]. Retrieved from <a href="https://thenounproject.com/term/code/45868/" class="link">https://thenounproject.com/term/code/45868/</a></p>
+			<p class="para">Xicons.co. Creator. n.d. <em>Shopping Cart</em> [Icon]. Retrieved from <a href="https://thenounproject.com/term/shopping-cart/573706/" class="link">https://thenounproject.com/term/shopping-cart/573706/</a></p>
+
+		<hr>
+
+		<h2 class="pageHead2" id="other">Other</h2>
+			<p class="para">CDNJS. Creator. n.d. <em>jQuery Minified</em> [Library]. Retrieved from <a class="link inline" href="https://gist.github.com/rowild/5516656">https://gist.github.com/rowild/5516656</a></p>
+		    
+  </article>
+  
+
+</section>
+  
+				    <script>
+					function myFunction() {
+					    document.getElementById("myDropdown").classList.toggle("show");
+					}
+
+					window.onclick = function(event) {
+					  if (!event.target.matches('.dropbtn')) {
+
+					    var dropdowns = document.getElementsByClassName("dropdown-content");
+					    var i;
+					    for (i = 0; i < dropdowns.length; i++) {
+					      var openDropdown = dropdowns[i];
+					      if (openDropdown.classList.contains('show')) {
+					        openDropdown.classList.remove('show');
+					      }
+					    }
+					  }
+					}
+					</script>
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script>
+		var stickyNavTop = $('nav').offset().top;		 
+		var stickyNav = function(){
+		var scrollTop = $(window).scrollTop();			  
+		if (scrollTop > stickyNavTop) { 
+			$('nav').addClass('sticky');	
+			$('aside').addClass('stickyAside');
+			document.getElementById("logoNav").style.visibility = "visible";
+			} else {
+			$('nav').removeClass('sticky'); 
+			$('aside').removeClass('stickyAside');
+			document.getElementById("logoNav").style.visibility = "hidden";
+			}
+		};
+		stickyNav();		 
+		$(window).scroll(function() {
+			stickyNav();
+		});	
+	</script>
+	
+  </body>
+  
+</html>
