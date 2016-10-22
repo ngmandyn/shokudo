@@ -12,6 +12,26 @@
 
   <body>
 
+
+
+
+	
+	<!--<nav class="mainNav">-->
+		<nav class="mainNavBarDemo">
+			<a href="" id="logoNavDemo"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a>
+			<!--<div class="dropdown">-->
+				<button onclick="myFunction()" class="dropbtn">RECIPES &#9660</button>
+				  <div id="myDropdown" class="dropdown-content">
+				    <a href="#">BREAKFAST</a>
+				    <a href="#">LUNCH</a>
+				    <a href="#">DINNER</a>
+				  </div>
+		    <!--</div>-->
+			<a href="" class="navItem">SHOP INGREDIENTS</a>
+		</nav>
+
+
+  
 	    <div class="main-vid">
 	    	<span class="main-vid-name">Recipe: Roasted Butternut Squash with Herb Oil and Goat Cheese</span>
 	    	<span class="main-vid-watch"><button class="button cta">Watch Video ►</button></span>
@@ -28,25 +48,30 @@
 			</div>
   		</div>
 
-	    <script>
-		function myFunction() {
-		    document.getElementById("myDropdown").classList.toggle("show");
-		}
+  
 
-		window.onclick = function(event) {
-		  if (!event.target.matches('.dropbtn')) {
+</section>
+  
+    <script>
+	function myFunction() {
+	    document.getElementById("myDropdown").classList.toggle("show");
+	}
 
-		    var dropdowns = document.getElementsByClassName("dropdown-content");
-		    var i;
-		    for (i = 0; i < dropdowns.length; i++) {
-		      var openDropdown = dropdowns[i];
-		      if (openDropdown.classList.contains('show')) {
-		        openDropdown.classList.remove('show');
-		      }
-		    }
-		  }
-		}
-		</script>
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('show')) {
+	        openDropdown.classList.remove('show');
+	      }
+	    }
+	  }
+	}
+	</script>
+>>>>>>> Stashed changes
 
 
 	
