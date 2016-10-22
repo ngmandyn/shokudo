@@ -44,6 +44,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  z-index: -2;
 }
 
 .main-vid-name {
@@ -134,31 +135,19 @@ body {
 }
 
 
-/*
-.mainNav {
-  background: #fff;
-  border-bottom: thin solid #ddd;
-  font-size: 0.5em;
-  max-width: 100%;
-  font-family: 'SanFranciscoDisplay-Regular', sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.1vw;
-  z-index: 999;
-  overflow: hidden;
-  padding: 0.8em 0 0.6em 0;
+#logoNavDemo img {
+  height: 2em;
+  margin-right: 3em;
+  margin-left: 1.5em;
   vertical-align: middle;
 }
 
-*/
-
-
-#logoNavDemo img {
-  height: 4em;
+#iconNavDemo img {
+  height: 1em;
+  margin-top: 1.2em;
   margin-right: 2em;
   margin-left: 1.5em;
-  vertical-align: middle;
-
+  float: right;
 }
 
 .mainNavBarDemo {
@@ -179,6 +168,7 @@ body {
   background-color: #fff;
   color: #886f5b;
   padding: 0.8em;
+  margin-left: 2em;
   border: none;
   cursor: pointer;
   letter-spacing: 0.2vw;
@@ -201,13 +191,16 @@ body {
   position: absolute;
   background-color: #fff;
   min-width: 5em;
-    margin-left: 17em;
+  margin-left: 16.7em;
+  border:1px solid #ddd;
+  margin-top: 0.7em;
 
 }
 
 .dropdown-content a {
   color: #886f5b;
   padding: 0.8em 0.8em;
+  padding-right: 0.6em;
   text-decoration: none;
   display: block;
 }
