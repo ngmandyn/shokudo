@@ -68,29 +68,43 @@ body {
   background: #95ae6f;
   width: 100vw;
   text-align: center;
-  padding: 0.5em;
   color: white;
 }
 
 .process-heading {
-  width: 100%;
+  width: 100vw;
   display: inline-block;
   font-size: 1.4em;
-  padding: 0.5em;
+  padding: 0.5em 0 0 0;
+}
+
+.process-banner p {
+  margin: 0.2;
 }
 
 .process-steps-wrap {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 67vw;
+  width: 68vw;
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+.process-step-img {
+  background: white;
+  height: 5em;
+  width: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+  border-radius: 10em;
 }
 
 .col-1-4 { 
-  height: 6em;
-  width: 16.75vw; 
-  border: thin solid #6b5a8c; 
+  width: 16.6vw; 
   float: left;
+  padding: 0.5em 0 1em 0;
 }
 
 .clear:after {
@@ -106,7 +120,17 @@ body {
   .col-1-4 {
     width: 33vw;
   }
+}
 
+@media (max-width: 500px) {
+  .process-steps-wrap {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .col-1-4 {
+    width: 100vw;
+  }
 }
 
 
@@ -140,14 +164,14 @@ body {
 .mainNavBarDemo {
   /*border: 1px solid #ddd;*/
   font-size: 0.8em;
-  height: 3.1em;
-  padding: 1em 1em 1em 1em;
-  margin: 0 2vw 0 2vw;
+/*  height: 3.1em;*/
+  padding: 0.7em 1em 0.7em 1em;
   letter-spacing: 0.2vw;
   display: block;
   color: #aaa;
   text-decoration: none;
   overflow: hidden;
+  border-bottom: thin solid #ddd;
  }
 
 /* Dropdown Button */
