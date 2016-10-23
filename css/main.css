@@ -206,42 +206,59 @@ body {
 
 
 #logoNavDemo img {
+  position: absolute;
   height: 2em;
+  margin-top: 1em;
   margin-right: 3em;
-  margin-left: 1.5em;
+  margin-left: 4.5em;
   vertical-align: middle;
 }
 
 #iconNavDemo img {
   height: 1em;
-  margin-top: 1.2em;
   margin-right: 2em;
-  margin-left: 1.5em;
+  margin-top: 1.5em;
   float: right;
 }
 
+/*
 .mainNavBarDemo {
-  /*border: 1px solid #ddd;*/
   font-size: 0.8em;
-/*  height: 3.1em;*/
   padding: 0.7em 1em 0.7em 1em;
   letter-spacing: 0.2em;
   display: block;
   color: #aaa;
   text-decoration: none;
   overflow: hidden;
-  border-bottom: thin solid #ddd;
- }
+  border-bottom: thin solid #ddd; 
+}
+*/
+
+
+
+.topnav {
+  font-size: 0.8em;
+  /*height: 3.1em;*/
+  padding: 0.7em 1em 0.7em 1em;
+  letter-spacing: 0.2em;
+  display: block;
+  color: #aaa;
+  text-decoration: none;
+  overflow: hidden;
+  border-bottom: thin solid #ddd; 
+}
 
 /* Dropdown Button */
 .dropbtn {
   background-color: #fff;
   color: #886f5b;
-  padding: 0.8em;
-  margin-left: 2em;
-  border: none;
   cursor: pointer;
   letter-spacing: 0.2em;
+  font-size: 1.2em;
+  text-decoration: none;
+  border: none;
+  margin-top: 0.8em;
+  padding-left: 1em;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -249,22 +266,15 @@ body {
   outline: none;
 }
 
-/*
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-*/
-
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #fff;
   min-width: 5em;
   margin-left: 16.7em;
   border:1px solid #ddd;
   margin-top: 0.7em;
-  z-index: 1;
+  z-index: 10000;
 
 }
 
@@ -286,11 +296,10 @@ body {
 }
 
 .navItem {
-  margin: auto 0 auto 2.5vw;
+  margin: 0 0 0 0;
   color: #886f5b;
   text-decoration: none;
-  padding: 0.3em 0.5em 0.3em 0.5em;
-  border-radius: 0.3em;
+  padding: 0.3em auto 0.3em 5em;
 }
 
 .navItem:hover {
@@ -304,7 +313,79 @@ body {
 }
 
 
-hr {
-  border:1px solid #ddd;
+
+
+
+
+
+
+
+
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
 }
 
+/* Float the list items side by side */
+ul.topnav li {
+  float: left;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+  display: inline-block;
+  color: #886f5b;
+  text-align: center;
+  padding: 0.9em 1em;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1.2em;
+
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+  color: #85ae6f;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {
+  display: none;
+}
+
+
+
+
+/* When the screen is less than 800 pixels wide, hide all list items, except for the first one (""). 
+Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:800px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: left;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+This class makes the topnav look good on small screens */
+@media screen and (max-width:800px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
