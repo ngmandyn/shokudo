@@ -69,7 +69,7 @@
 .col-2-6 span {
   padding-top: 1.5em;
   display: inline-block;
-  color: white;
+  color: black;
   font-size: 1.4em;
   font-weight: 600;
   z-index: 3;
@@ -85,10 +85,72 @@
 }
 
 .col-2-6 {
-  background: -webkit-linear-gradient(top, #555555 0%, #ffffff 100%); 
+  background: white; 
   border: thin solid #ccc;
   border-radius: 0.3em;
   width: 36.2vw; 
+  height: 32em;
+  float: left;
+  margin: 1em 0 0.5em 0.9vw;
+  position: relative;
+}
+
+
+.col-2-2 span {
+  padding-top: 1.5em;
+  display: inline-block;
+  color: black;
+  font-size: 1.4em;
+  font-weight: 600;
+  z-index: 3;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.col-2-2-cta {
+  position: absolute;
+  bottom: 0em;
+  right: 0em;
+  font-size: 0.9em;
+  z-index: 4;
+}
+
+.col-2-2 {
+  background: white; 
+  border: thin solid #ccc;
+  border-radius: 0.3em;
+  width: 46.5vw; 
+  height: 32em;
+  float: left;
+  margin: 1em 0 0.5em 2.9vw;
+  position: relative;
+  text-align: center;
+}
+
+.col-2-2-2 span {
+  padding-top: 1.5em;
+  display: inline-block;
+  color: black;
+  font-size: 1.4em;
+  font-weight: 600;
+  z-index: 3;
+  padding-left: 12em;
+  margin-bottom: 5em;
+}
+
+.col-2-2-2-cta {
+  position: absolute;
+  bottom: 0em;
+  right: 0em;
+  font-size: 0.9em;
+  z-index: 4;
+}
+
+.col-2-2-2 {
+  background: white; 
+  border: thin solid #ccc;
+  border-radius: 0.3em;
+  width: 46.5vw; 
   height: 32em;
   float: left;
   margin: 1em 0 0.5em 0.9vw;
@@ -122,6 +184,23 @@
   margin: 1em 0 0.5em 2.9vw;
   position: relative;
   text-align: center;
+}
+
+.textInput {
+  display: block;
+  font-size: 1.15em;
+  line-height: 1.6em;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  border: thin solid #aaa;
+  border-radius: 0.1em;
+  width: 20em;
+  height: 2.3em;
+  background: #fafafa;
+  margin-bottom: 0.5em;
+  margin-left: 7em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .prod-num {
@@ -223,9 +302,6 @@ span.product-vid-add {
   border-bottom: 0.15em solid #af591f;  
   cursor: pointer;
 }
-
-
-
 
 .steps-comments-wrap {
   width: 100vw;
