@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Template: Detail Product | Shokudo</title>
+		<link rel="stylesheet" href="css/normalize.css"> 
+		<link rel="stylesheet" href="css/main.css"> 
+		<link rel="stylesheet" href="css/grids.css"> 
+  </head>
+
+  <body>
+	
+		<ul class="topnav" id="myTopnav">
+		  <li></li>
+		  <li>
+          	   <button onclick="myFunction()" class="dropbtn">RECIPES &#9660</button>
+				 <div id="myDropdown" class="dropdown-content">
+				    <a href="#">BREAKFAST</a>
+				    <a href="#">LUNCH</a>
+				    <a href="#">DINNER</a>
+				 </div>
+		  </li>
+		  <li><a href="template-products.html" class="navItem">SHOP</a></li>
+
+		  <a href="template-home.html" id="logoNavDemo"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a>
+
+		  <a href="template-cart.html" id="iconNavDemo"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
+		  <a href="" id="iconNavDemo"><img src="img/icon-account.png" alt="account icon"></a>
+		  <a href="" id="iconNavDemo"><img src="img/icon-search.png" alt="search icon"></a>
+		  
+		  <li class="icon">
+		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		  </li>
+		</ul>
+
+
+
+			<div class="col-4-6">
+		   		<div class="item-img"><span>Image of Ingredient</span></div>
+		    </div> 
+
+			<div class="col-2-6">
+		   		<div class="item-img"><span>Colossal Garlic</span></div>
+		   		<p class="prod-num2">Product#: 20165581001</p>
+		   		<p class="prod-discp">This is the discription of the product.
+		   			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+				<label class="formLabel">Quantity:</label>
+				<select class="dropdownInput" name="recipe" id="recipe">
+					    <option value="Pancakes">1</option>
+					    <option value="Cereal">2</option>
+						<option value="Sandwich">3</option>
+					 	<option value="Wrap">4</option>
+						<option value="Steak">5</option>
+					 	<option value="Seafood">6</option>
+				</select>
+
+				<p class="prod-price2">$0.99 / 10g</p>
+		    	<span class="product-vid-add"><button class="button2 cta2">ADD</button></span>
+		    </div>
+
+
+		<div class="items-wrap">
+			<div class="col-1-6">
+		   		<div class="item-img"><span>Colossal Garlic</span></div>
+		   		<p class="prod-num">Product#: 20165581001</p>
+				<p class="prod-price">$0.99 / 10g</p>
+		    	<span class="product-vid-add"><button class="button2 cta2">ADD</button></span>
+		    </div> 
+			<div class="col-1-6">
+		   		<div class="item-img"><span>Colossal Garlic</span></div>
+		   		<p class="prod-num">Product#: 20165581001</p>
+				<p class="prod-price">$0.99 / 10g</p>
+		    	<span class="product-vid-add"><button class="button2 cta2">ADD</button></span>
+		    </div>
+			<div class="col-1-6">
+		   		<div class="item-img"><span>Colossal Garlic</span></div>
+		   		<p class="prod-num">Product#: 20165581001</p>
+				<p class="prod-price">$0.99 / 10g</p>
+		    	<span class="product-vid-add"><button class="button2 cta2">ADD</button></span>
+		    </div> 
+			<div class="col-1-6">
+		   		<div class="item-img"><span>Colossal Garlic</span></div>
+		   		<p class="prod-num">Product#: 20165581001</p>
+				<p class="prod-price">$0.99 / 10g</p>
+		    	<span class="product-vid-add"><button class="button2 cta2">ADD</button></span>
+		    </div>
+			<div class="col-1-6">
+		   		<div class="item-img"><span>Colossal Garlic</span></div>
+		   		<p class="prod-num">Product#: 20165581001</p>
+				<p class="prod-price">$0.99 / 10g</p>
+		    	<span class="product-vid-add"><button class="button2 cta2">ADD</button></span>
+		    </div>
+			<div class="col-1-6">
+		   		<div class="item-img"><span>Colossal Garlic</span></div>
+		   		<p class="prod-num">Product#: 20165581001</p>
+				<p class="prod-price">$0.99 / 10g</p>
+		    	<span class="product-vid-add"><button class="button2 cta2">ADD</button></span>
+		    </div> 
+		</div>
+
+			<div class="col-6-6">
+		   		<div class="item-img"><span>Feedbacks</span></div>
+		    </div> 
+
+
+
+
+
+		<footer class="pageFooter">
+			<span>© 2016 Shokudo</span>
+			<a href="template-about.html">About Us</a>
+			<a href="">Customer Service</a>
+		</footer>
+  
+ 
+<script>
+	function myFunction() {
+	    document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('show')) {
+	        openDropdown.classList.remove('show');
+	      }
+	    }
+	  }
+	}
+</script>
+
+<script>
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topnav";
+	    }
+	}
+</script>
+  
+  </body>
+  
+</html>

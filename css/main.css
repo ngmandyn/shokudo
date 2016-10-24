@@ -329,7 +329,7 @@ button img {
   margin-left: 16.7em;
   border:1px solid #ddd;
   margin-top: 0.7em;
-  z-index: 10000;
+  z-index: 100;
 
 }
 
@@ -339,7 +339,7 @@ button img {
   padding-right: 0.6em;
   text-decoration: none;
   display: block;
-  z-index: 2;
+  z-index: 200;
 }
 
 .dropdown-content a:hover {
