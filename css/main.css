@@ -34,6 +34,11 @@ button img {
   border-bottom: 0.15em solid #bd6124;
 }
 
+.cta a {
+  color: white;
+  text-decoration: none;
+}
+
 .button.cta:hover {
   background: #c86726;
   border-top: thin solid #af591f;
