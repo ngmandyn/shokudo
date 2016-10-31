@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Template: Detail Product | Shokudo</title>
+    <title>Template: Account | Shokudo</title>
 		<link rel="stylesheet" href="css/normalize.css"> 
 		<link rel="stylesheet" href="css/main.css"> 
 		<link rel="stylesheet" href="css/grids.css"> 
@@ -11,45 +11,44 @@
 
   <body>
 	
-		<ul class="topnav" id="myTopnav">
+		<ul class="topNav" id="myTopnav">
 		  <li></li>
-		  <li>
-          	   <button onclick="myFunction()" class="dropbtn">RECIPES &#9660</button>
-				 <div id="myDropdown" class="dropdown-content">
-				    <a href="#">BREAKFAST</a>
-				    <a href="#">LUNCH</a>
-				    <a href="#">DINNER</a>
-				 </div>
-		  </li>
-		  <li><a href="template-products.html" class="navItem">SHOP</a></li>
+		  <li><a href="template-products.html" class="navItem">About</a></li>
+		  <li><a href="template-products.html" class="navItem">Contact</a></li>
+		  <li><a href="template-products.html" class="navItem">Shop</a></li>
 
-		  <a href="template-home.html" id="logoNavDemo"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a>
+		  <a href="template-home.html" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a>
 
-		  <a href="template-cart.html" id="iconNavDemo"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
-		  <a href="template-account.html" id="iconNavDemo"><img src="img/icon-account.png" alt="account icon"></a>
-		  <a href="" id="iconNavDemo"><img src="img/icon-search.png" alt="search icon"></a>
+		  <a href="template-cart.html" id="iconNav"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
+		  <a href="template-account.html" id="iconNav"><img src="img/icon-account.png" alt="account icon"></a>
+		  <a href="#" id="iconNav"><img src="img/icon-search.png" alt="search icon"></a>
 		  
 		  <li class="icon">
-		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		     <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
 		  </li>
 		</ul>
 
 
 
-			<div class="col-2-2">
-		   		<div class="item-img"><span>LOG IN</span></div>
-		   		<input class="textInput" type="text" id="form-input" placeholder="Email">
+        <div class="account-wrap">
+			<img src="img/about.jpg" alt="a person having a meal" id="img-about">
+			<div class="col-1-2">
+				<span>LOG IN</span>
+				<input class="textInput" type="text" id="form-input" placeholder="Username">
+				<input class="textInput" type="text" id="form-input" placeholder="Email (Forget Username)">
                 <input class="textInput" type="text" id="form-input" placeholder="Passwaord">
-		    	<span class="product-vid-add"><button class="button2 cta2">LOG IN</button></span>
+                <p>Forget Password?</p>
+                <span class="product-vid-add"><button class="button cta">LOG IN</button></span>
 		    </div> 
 
-			<div class="col-2-2-2">
-		   		<div class="item-img"><span>SIGN UP</span></div>
-		   		<input class="textInput" type="text" id="form-input" placeholder="Email">
+			<div class="col-1-2">
+			    <span>SIGN UP</span>
+				<input class="textInput" type="text" id="form-input" placeholder="Email">
                 <input class="textInput" type="text" id="form-input" placeholder="Passwaord">
                 <input class="textInput" type="text" id="form-input" placeholder="Confirm Passwaord">
-		    	<span class="product-vid-add"><button class="button2 cta2">SIGN UP</button></span>
+                <span class="product-vid-add"><button class="button cta">SIGN UP</button></span>
 		    </div>
+		</div>
 
 
 		
@@ -62,34 +61,15 @@
 		</footer>
   
  
-<script>
-	function myFunction() {
-	    document.getElementById("myDropdown").classList.toggle("show");
-	}
-
-	window.onclick = function(event) {
-	  if (!event.target.matches('.dropbtn')) {
-
-	    var dropdowns = document.getElementsByClassName("dropdown-content");
-	    var i;
-	    for (i = 0; i < dropdowns.length; i++) {
-	      var openDropdown = dropdowns[i];
-	      if (openDropdown.classList.contains('show')) {
-	        openDropdown.classList.remove('show');
-	      }
-	    }
-	  }
-	}
-</script>
 
 <script>
 	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 	function myFunction() {
 	    var x = document.getElementById("myTopnav");
-	    if (x.className === "topnav") {
+	    if (x.className === "topNav") {
 	        x.className += " responsive";
 	    } else {
-	        x.className = "topnav";
+	        x.className = "topNav";
 	    }
 	}
 </script>
