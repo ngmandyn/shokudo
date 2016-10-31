@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
   <head>
     <meta charset="UTF-8">
-    <title>Template: Cart | Shokudo</title>
+    <title>Baby Spinach: Product Details | Shokudo</title>
 		<link rel="stylesheet" href="css/normalize.css"> 
 		<link rel="stylesheet" href="css/main.css"> 
 		<link rel="stylesheet" href="css/grids.css"> 
@@ -22,7 +21,6 @@
 				    <a href="#">DINNER</a>
 				 </div>
 		  </li>
-
 		  <li><a href="template-products.html" class="navItem">SHOP</a></li>
 
 		  <a href="template-home.html" id="logoNavDemo"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a>
@@ -34,50 +32,51 @@
 		  <li class="icon">
 		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
 		  </li>
-
-
 		</ul>
 
 
-<div class="container">
-  <h1 class="cart-heading">My Cart</h1> <span class="cart-numitems">(5 items)</span>
-  <table class="table table-xs">
-    <tr>
-      <th></th>
-      <th class="head-row">Description</th>
-      <th class="head-row">Amount</th>
-      <th class="head-row">Price</th>
-      <th class="head-row">Total</th>
-    </tr>
-    <tr class="item-row">
-      <td><a href="template-detail-product-garlic.html"><img src="img/garlic.jpg" class="item-thumb"></img></a></td>
-      <td class="cart-desc">
-        <span class="cart-prodname"><a class="link" href="template-detail-product-garlic.html">Organic Colossal Garlic</a></span>
-        <span class="cart-prodquant">10g</span>
-        <span class="cart-prodnum">Product#: 20165581001</span>
-      </td>
-      <td title="Amount" class="text-right"><input class="cart-num" type="number" name="quantity" min="1" max="5" placeholder="3"></td>
-      <td title="Price" class="text-right">0.99</td>
-      <td title="Subtotal" class="text-right">2.97</td>
-    </tr>
-    <tr class="item-row item-row-last">
-      <td><a href="template-detail-product-spinach.html"><img src="img/spinach.jpg" class="item-thumb"></img></a></td>
-      <td class="cart-desc">
-        <span class="cart-prodname"><a class="link" href="template-detail-product-spinach.html">Organic Baby Spinach</a></span>
-        <span class="cart-prodquant">100g</span>
-        <span class="cart-prodnum">Product#: 20165581002</span>
-      </td>
-      <td title="Amount" class="text-right"><input class="cart-num" type="number" name="quantity" min="1" max="5" placeholder="2"></td>
-      <td title="Price" class="text-right">2.99</td>
-      <td title="Subtotal" class="text-right">5.98</td>
-    </tr>
-    <tr class="total-row info">
-      <td colspan="4" class="grand-total">Order Total:</td>
-      <td class="text-right">8.95</td>
-    </tr>
-  </table>
-  <a href="template-cart-checkout.html"><button class="button cta paybtn">Checkout</button></a>
-</div>
+
+			<div class="col-4-6">
+		   		<!-- <div class="item-img"><span>Image of Ingredient</span></div> -->
+		   		<!-- <div class="item-img"> --><img class="product-img" src="img/spinach.jpg"><!-- </div> -->
+		    </div> 
+
+			<div class="col-2-6">
+		   		<span class="prod-detail-name">Organic Baby Spinach</span>
+		   		<p class="prod-num2">Product#: 20165581002</p>
+		   		<p class="prod-discp">Trimmed and washed organic baby spinach is delicious for salads, steamed or sautéed with butter. Certified organic!
+		   			</p>
+
+				<label class="formLabel">Quantity:</label>
+				<select class="dropdownInput" name="recipe" id="recipe">
+					    <option value="Pancakes">1</option>
+					    <option value="Cereal">2</option>
+						<option value="Sandwich">3</option>
+					 	<option value="Wrap">4</option>
+						<option value="Steak">5</option>
+					 	<option value="Seafood">6</option>
+				</select>
+
+				<span class="prod-price2">$2.99 / 100g</span>
+		    	<a href="template-cart.html"><span class="product-vid-add"><button class="button2 cta2">ADD</button></span></a>
+		    </div>
+
+			<div class="col-6-6">
+			<div class="reviews-heading">Reviews</div>
+		   	<div class="reviews">
+				<div class="item-review-pic"></div>
+				<span class="cart-prodname">Great product! 	&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+        		<span class="review-content">Came exactly as described with all the ingredients needed for the recipe. Loved saving time by not having to go out shopping for my groceries!</span>
+			</div>
+			<div class="reviews">
+				<div class="item-review-pic"></div>
+				<span class="cart-prodname">Fresh and fast delivery &#9733; &#9733; &#9733; &#9733; &#9734;</span>
+        		<span class="review-content">My order arrived first thing the next morning! Worth the extra cost.</span>
+			</div>
+		    </div> 
+
+
+
 
 
 		<footer class="pageFooter">
@@ -86,7 +85,8 @@
 			<a href="">Customer Service</a>
 		</footer>
   
-    <script>
+ 
+<script>
 	function myFunction() {
 	    document.getElementById("myDropdown").classList.toggle("show");
 	}
@@ -117,7 +117,7 @@
 	    }
 	}
 </script>
-
+  
   </body>
   
 </html>
