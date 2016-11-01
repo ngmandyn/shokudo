@@ -119,9 +119,34 @@ button img {
   cursor: pointer;
 }
 
+
+
 #main-vid-cook img{
+  position: relative;
   width: 100vw;
   height: 50vw;
+}
+
+.play-icon {
+  position: absolute;
+  text-align: center;
+  top: 25em;
+  display: block;
+  width: 100vw;
+  border: none;
+}
+
+.play-icon img {
+  height: 2.4em;
+}
+
+.prod-num {
+  color: #aaa;
+  font-size: 0.8em;
+}
+.prod-price {
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .product-vid {
@@ -220,6 +245,24 @@ button img {
   width: 100vw;
 }
 
+.textInput-account {
+  display: block;
+  font-size: 1em;
+  padding: 0.1em 0em 0.3em 0.5em;
+  border: thin solid #aaa;
+  border-radius: 0em;
+  width: 30vw;
+  height: 1.8em;
+  background: #fff;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
 .textInput {
   font-size: 1em;
   padding: 0.1em 0em 0.3em 0.5em;
@@ -254,7 +297,7 @@ input::-webkit-input-placeholder{
 }
 
 
-span.product-vid-add {
+.product-vid-add span{
   position: relative;
   padding-top: 1em;
   bottom: 0em;
