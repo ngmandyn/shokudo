@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Cart | Shokudo</title>
+		<link rel="stylesheet" href="css/normalize.css"> 
+		<link rel="stylesheet" href="css/main.css"> 
+		<link rel="stylesheet" href="css/grids.css">
+		<link rel="stylesheet" href="css/main2.css"> 
+		<link rel="stylesheet" href="css/grids2.css"> 
+  </head>
+
+  <body>
+	
+
+
+    <nav class="topNav" id="myTopnav">
+        <span></span>
+        <span><a href="about.html" class="navItem">About</a></span>
+        <span><a href="contact.html" class="navItem">Contact</a></span>
+        <span><a href="products.html" class="navItem">Shop</a></span>
+
+        <div class="logoBox"><a href="#" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a></div>
+
+        <a href="cart.html" id="iconCart"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
+        <a href="account.html" id="iconAccount"><img src="img/icon-account.png" alt="account icon"></a>
+        <a href="home.html" id="iconHome"><img src="img/icon-home.png" alt="search icon"></a>
+        
+        <span class="icon">
+           <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
+        </span>
+    </nav>
+
+
+    <div class="container">
+      <h1 class="cart-heading">My Cart</h1> <span class="cart-numitems">(5 items)</span>
+      <table class="table table-xs">
+        <tr>
+          <th></th>
+          <th class="head-row">Description</th>
+          <th class="head-row">Amount</th>
+          <th class="head-row">Price</th>
+          <th class="head-row">Total</th>
+        </tr>
+        <tr class="item-row">
+          <td><a href="detail-product-garlic.html"><img src="img/garlic.jpg" class="item-thumb"></img></a></td>
+          <td class="cart-desc">
+            <span class="cart-prodname"><a class="link" href="detail-product-garlic.html">Organic Colossal Garlic</a></span>
+            <span class="cart-prodquant">10g</span>
+            <span class="cart-prodnum">Product#: 20165581001</span>
+          </td>
+          <td title="Amount" class="text-right"><input class="cart-num" type="number" name="quantity" min="1" max="5" placeholder="3"></td>
+          <td title="Price" class="text-right">0.99</td>
+          <td title="Subtotal" class="text-right">2.97</td>
+        </tr>
+        <tr class="item-row item-row-last">
+          <td><a href="detail-product-spinach.html"><img src="img/spinach.jpg" class="item-thumb"></img></a></td>
+          <td class="cart-desc">
+            <span class="cart-prodname"><a class="link" href="detail-product-spinach.html">Organic Baby Spinach</a></span>
+            <span class="cart-prodquant">100g</span>
+            <span class="cart-prodnum">Product#: 20165581002</span>
+          </td>
+          <td title="Amount" class="text-right"><input class="cart-num" type="number" name="quantity" min="1" max="5" placeholder="2"></td>
+          <td title="Price" class="text-right">2.99</td>
+          <td title="Subtotal" class="text-right">5.98</td>
+        </tr>
+        <tr class="total-row info">
+          <td colspan="4" class="grand-total">Order Total:</td>
+          <td class="text-right">8.95</td>
+        </tr>
+      </table>
+      <a href="cart-checkout.html"><button class="button cta paybtn">Checkout</button></a>
+    </div>
+
+
+		<footer class="pageFooter">
+			<span>© 2016 Shokudo</span>
+			<a href="template-about.html">About Us</a>
+			<a href="">Customer Service</a>
+		</footer>
+  
+
+
+<script>
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topNav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topNav";
+	    }
+	}
+</script>
+
+  </body>
+  
+</html>

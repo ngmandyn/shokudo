@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Shop Products | Shokudo</title>
+		<link rel="stylesheet" href="css/normalize.css"> 
+		<link rel="stylesheet" href="css/main.css"> 
+		<link rel="stylesheet" href="css/grids.css">
+		<link rel="stylesheet" href="css/main2.css"> 
+		<link rel="stylesheet" href="css/grids2.css">  
+  </head>
+
+  <body>
+	
+
+		<nav class="topNav" id="myTopnav">
+			  <span></span>
+			  <span><a href="about.html" class="navItem">About</a></span>
+			  <span><a href="contact.html" class="navItem">Contact</a></span>
+			  <span><a href="products.html" class="navItem">Shop</a></span>
+
+			  <div class="logoBox"><a href="#" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a></div>
+
+			  <a href="cart.html" id="iconCart"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
+			  <a href="account.html" id="iconAccount"><img src="img/icon-account.png" alt="account icon"></a>
+			  <a href="home.html" id="iconHome"><img src="img/icon-home.png" alt="search icon"></a>
+			  
+			  <span class="icon">
+			     <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
+			  </span>
+		</nav>
+		
+
+      	<div class="items-wrap">
+      		<aside class="sidebar">
+      			<h1 class="sidebar-heading1">Ingredients</h1>
+      			<label class="sidebar-label">Categories</label>
+      			<ul class="sidebar-oplist">
+	      			<li><a href="">Fruits & Vegetables</a> </li>
+	      			<li><a href="">Meat & Seafood</a> </li>
+	      			<li><a href="">Dairy & Eggs</a> </li>
+	      			<li><a href="">Spices & Sauces</a> </li>
+      			</ul>
+      			<hr>
+      			<span>
+      			<label class="sidebar-label">Sort by</label> 
+				<select class="sidebar-dropdown" name="recipe" id="recipe"> 
+					<option value="Season">In Season</option>
+				    <option value="Price-Asc">Price: Low to high</option> 
+				    <option value="Price-Desc">Price: High to low</option> 
+				</select>
+				</span>
+
+      		</aside>
+
+		    <a href="detail-product-garlic.html"><div class="col-1-5">
+		   		<img class="item-img" src="img/garlic.jpg">
+		   		<span class="ing-prodname"><strong>Organic Colossal Garlic</strong></span>
+		   		<span class="button cta viewdetails">Details</span>
+		   		<span class="cart-prodnum">Product#: 20165581001</span>
+		   		<span class="item-price">$0.99 / 10g</span>
+		    </div></a>
+
+		    <a href="detail-product-spinach.html">
+		    <div class="col-1-5">
+		   		<img class="item-img" src="img/spinach.jpg">
+		   		<span class="ing-prodname"><strong>Organic Baby Spinach</strong></span>	  
+		   		<span class="button cta viewdetails">Details</span>
+		   		<span class="cart-prodnum">Product#: 20165581002</span>
+		   		<span class="item-price">$2.99 / 100g</span>  
+		    </div> 
+		</a>
+		    <a href="detail-product-garlic.html"><div class="col-1-5">
+		   		<img class="item-img" src="img/mushroom.jpg">
+		   		<span class="ing-prodname"><strong>Organic Cremini Mushroom</strong></span>	   
+		   		<span class="button cta viewdetails">Details</span>
+		   		<span class="cart-prodnum">Product#: 20165581003</span>
+		   		<span class="item-price">$0.80 / 100g</span>   	    	
+		    </div> </a>
+		     <a href="detail-product-spinach.html"><div class="col-1-5">
+		   		<img class="item-img" src="img/lemon.jpg">
+		   		<span class="ing-prodname"><strong>Organic Lemon</strong></span>	    
+		   		<span class="button cta viewdetails">Details</span>
+		   		<span class="cart-prodnum">Product#: 20165581004</span>
+		   		<span class="item-price">$0.75 / ea</span>  
+		    </div> </a>
+		    <a href="detail-product-garlic.html"><div class="col-1-5">
+		   		<img class="item-img" src="img/avocado.jpg">
+		   		<span class="ing-prodname"><strong>Organic Avocado</strong></span>	
+		   		<span class="button cta viewdetails">Details</span>
+		   		<span class="cart-prodnum">Product#: 20165581005</span>
+		   		<span class="item-price">$2.00 / ea</span>      
+		    </div> </a>
+		</div>
+		</div>
+
+
+		<footer class="pageFooter">
+			<span>© 2016 Shokudo</span>
+			<a href="about.html">About Us</a>
+			<a href="">Customer Service</a>
+		</footer>
+  
+
+
+<script>
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topNav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topNav";
+	    }
+	}
+</script>
+
+  </body>
+  
+</html>

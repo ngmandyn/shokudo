@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>About | Shokudo</title>
+		<link rel="stylesheet" href="css/normalize.css"> 
+		<link rel="stylesheet" href="css/main.css"> 
+		<link rel="stylesheet" href="css/grids.css"> 
+  </head>
+
+  <body>
+	
+
+
+		<nav class="topNav" id="myTopnav">
+			  <span></span>
+			  <span><a href="about.html" class="navItem">About</a></span>
+			  <span><a href="contact.html" class="navItem">Contact</a></span>
+			  <span><a href="products.html" class="navItem">Shop</a></span>
+
+			  <div class="logoBox"><a href="#" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a></div>
+
+			  <a href="cart.html" id="iconCart"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
+			  <a href="account.html" id="iconAccount"><img src="img/icon-account.png" alt="account icon"></a>
+			  <a href="home.html" id="iconHome"><img src="img/icon-home.png" alt="search icon"></a>
+			  
+			  <span class="icon">
+			     <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
+			  </span>
+		</nav>
+
+
+        <div class="about-wrap">
+			 <div class="col-1-1">
+				<img src="img/about.jpg" alt="a person having a meal" id="img-about">
+		   		<span>About</span>
+                   <p>SHOKUDO is a Vancouver based ingredients shopping and media company founded in 2016.
+                   The core idea of our company is to provide people with high quality and safe recipe ingredients. Besides that, we also privide users with updating recipe cooking tutorial so that people can learn cooking and purchase ingredients all at one time.
+                   We ensure that all our ingredients are all green and organic. To make sure that our ingredients are fresh, we only get a limit amount of each product every week. In addition, we deliver the food by our specific professional vehical within 48 hours after the order is submitted. (Right now we only ship to the area in Vancouver).</p>
+		     </div>
+		</div>
+
+
+
+
+
+		<footer class="pageFooter">
+			<span>© 2016 Shokudo</span>
+			<a href="template-about.html">About Us</a>
+			<a href="">Customer Service</a>
+		</footer>
+  
+
+
+<script>
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topNav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topNav";
+	    }
+	}
+</script>
+  
+  </body>
+  
+</html>

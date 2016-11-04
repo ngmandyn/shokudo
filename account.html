@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Account | Shokudo</title>
+		<link rel="stylesheet" href="css/normalize.css"> 
+		<link rel="stylesheet" href="css/main.css"> 
+		<link rel="stylesheet" href="css/grids.css"> 
+  </head>
+
+  <body>
+	
+
+
+		<nav class="topNav" id="myTopnav">
+			  <span></span>
+			  <span><a href="about.html" class="navItem">About</a></span>
+			  <span><a href="contact.html" class="navItem">Contact</a></span>
+			  <span><a href="products.html" class="navItem">Shop</a></span>
+
+			  <div class="logoBox"><a href="#" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a></div>
+
+			  <a href="cart.html" id="iconCart"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
+			  <a href="account.html" id="iconAccount"><img src="img/icon-account.png" alt="account icon"></a>
+			  <a href="home.html" id="iconHome"><img src="img/icon-home.png" alt="search icon"></a>
+			  
+			  <span class="icon">
+			     <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
+			  </span>
+		</nav>
+
+
+
+        <div class="account-wrap">
+			<div class="col-1-2">
+				<span>LOG IN</span>
+				<input class="textInput-account" type="text" id="form-input" placeholder="Username">
+				<input class="textInput-account" type="text" id="form-input" placeholder="Email (Forget Username)">
+                <input class="textInput-account" type="text" id="form-input" placeholder="Passwaord">
+                <p>Forget Password?</p>
+                <span class="product-vid-add"><button class="button cta">LOG IN</button></span>
+		    </div> 
+
+			<div class="col-1-2">
+			    <span>SIGN UP</span>
+				<input class="textInput-account" type="text" id="form-input" placeholder="Email">
+                <input class="textInput-account" type="text" id="form-input" placeholder="Passwaord">
+                <input class="textInput-account" type="text" id="form-input" placeholder="Confirm Passwaord">
+                <span class="product-vid-add"><button class="button cta">SIGN UP</button></span>
+		    </div>
+		</div>
+
+
+		
+
+
+		<footer class="pageFooter">
+			<span>© 2016 Shokudo</span>
+			<a href="template-about.html">About Us</a>
+			<a href="">Customer Service</a>
+		</footer>
+  
+ 
+
+<script>
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topNav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topNav";
+	    }
+	}
+</script>
+  
+  </body>
+  
+</html>

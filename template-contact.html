@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Template: Contact | Shokudo</title>
+		<link rel="stylesheet" href="css/normalize.css"> 
+		<link rel="stylesheet" href="css/main.css"> 
+		<link rel="stylesheet" href="css/grids.css"> 
+  </head>
+
+  <body>
+	
+		<ul class="topNav" id="myTopnav">
+		  <li></li>
+		  <li><a href="template-products.html" class="navItem">About</a></li>
+		  <li><a href="template-products.html" class="navItem">Contact</a></li>
+		  <li><a href="template-products.html" class="navItem">Shop</a></li>
+
+		  <a href="template-home.html" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a>
+
+		  <a href="template-cart.html" id="iconNav"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
+		  <a href="template-account.html" id="iconNav"><img src="img/icon-account.png" alt="account icon"></a>
+		  <a href="#" id="iconNav"><img src="img/icon-search.png" alt="search icon"></a>
+		  
+		  <li class="icon">
+		     <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
+		  </li>
+		</ul>
+
+
+
+
+			<div class="col-1-2-2">
+		   		<span>Contact Us</span>
+		   		<p>TEL: 778-123-7968</p>
+		   		<span class="input-box"><input class="textInput" type="text" id="form-input" placeholder="Full Name"></span>
+		   		<span class="input-box"><input class="textInput" type="text" id="form-input" placeholder="Email"></span>
+		   		<span class="input-box"><input class="textInput" type="text" id="form-input" placeholder="Subject"></span>
+		   		<span class="input-box"><input class="textInput2" type="text" id="form-input" placeholder="Message"></span>
+		   		<span class="product-vid-add"><button class="button cta">SEND</button></span>
+		    </div> 
+
+
+		<footer class="pageFooter">
+			<span>© 2016 Shokudo</span>
+			<a href="template-about.html">About Us</a>
+			<a href="">Customer Service</a>
+		</footer>
+  
+
+
+<script>
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topNav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topNav";
+	    }
+	}
+</script>
+  
+  </body>
+  
+</html>
