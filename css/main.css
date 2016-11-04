@@ -7,6 +7,44 @@ body {
   font-family: 'SanFranciscoDisplay-Regular', sans-serif;
 }
 
+#logoNav img {
+  width: 9em;
+  height: auto;
+  margin-top: 1em;
+}
+
+#iconCart img, #iconAccount img, #iconHome img {
+  display: inline-block;
+  height: 1.02em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  margin-right: 2em;
+  float: right;
+}
+
+#main-vid-img {
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+#iconWatch, #iconOrder, #iconDeliver, #iconMeal {
+  height: 3.5em;
+}
+
+#update-img1, #update-img2 {
+  padding-top: 0.2em;
+  display: block;
+  width: 100%;
+  z-index: 0;
+}
+
+#update-img1:hover, #update-img2:hover{
+  opacity: 0.8;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
 .topNav {
   position: relative;
   width: 100vw;
@@ -45,44 +83,11 @@ body {
   display: none;
 }
 
-/*.navItem {
-  letter-spacing: 0.1em;
-  margin: 0 0 0 0;
-  color: #886f5b;
-  text-decoration: none;
-}
-
-.navItem:hover {
-  color: #95ae6f;
-  transition: color 0.2s ease;
-}*/
-
-/*.navItem.curNavItem {
-  color: white;
-  background: #95ae6f;
-}
-*/
-
 .logoBox {
   position: absolute;
   display: block;
   width: 100vw;
   z-index: -1;
-}
-
-#logoNav img {
-  width: 9em;
-  height: auto;
-  margin-top: 1em;
-}
-
-#iconCart img, #iconAccount img, #iconHome img {
-  display: inline-block;
-  height: 1.02em;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-  margin-right: 2em;
-  float: right;
 }
 
 .button {
@@ -97,7 +102,7 @@ body {
   text-transform: uppercase;
 }
 
-button img {
+.button img {
   height: 0.8em;
   width: 0.9em;
   margin-right: 0.3em;
@@ -127,11 +132,7 @@ button img {
   cursor: pointer;
 }
 
-#main-vid-img img{
-  position: relative;
-  width: 100vw;
-  height: auto;
-}
+
 
 .play-icon {
   position: absolute;
@@ -193,43 +194,7 @@ button img {
   padding: 0 1em 0 3em;
 }
 
-#iconWatch, #iconOrder, #iconDeliver, #iconMeal {
-  height: 3.5em;
-}
 
-/*.process-step-img {
-  height: 5em;
-  width: 5em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.5em;
-  border-radius: 0em;
-}*/
-
-.updates-wrap {
-  width: 100vw;
-  padding-right: 16vw;
-  padding-left: 16vw;
-  font-size: 0.9em; 
-}
-
-.update-img span {
-  padding: 0.5em;
-  display: inline-block;
-}
-
-#update-img {
-  border-radius: 0.3em;
-  width: 100%;
-  min-height: 100%;
-  color: white;
-  font-size: 1.2em;
-}
-
-#update-img:hover {
-  cursor: pointer;
-  color: #ccc;
-}
 
 .account-wrap img {
   position: absolute;
