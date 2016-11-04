@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Home | Shokudo</title>
+		<link rel="stylesheet" href="css/normalize.css"> 
+		<link rel="stylesheet" href="css/main.css"> 
+		<link rel="stylesheet" href="css/grids.css"> 
+  </head>
+
+  <body>
+
+
+		<nav class="topNav" id="myTopnav">
+			  <span></span>
+			  <span><a href="about.html" class="navItem">About</a></span>
+			  <span><a href="contact.html" class="navItem">Contact</a></span>
+			  <span><a href="products.html" class="navItem">Shop</a></span>
+
+			  <div class="logoBox"><a href="#" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a></div>
+
+			  <a href="cart.html" id="iconCart"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
+			  <a href="account.html" id="iconAccount"><img src="img/icon-account.png" alt="account icon"></a>
+			  <a href="home.html" id="iconHome"><img src="img/icon-home.png" alt="search icon"></a>
+			  
+			  <span class="icon">
+			     <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
+			  </span>
+		</nav>
+
+
+
+
+	    <span class="main-vid">
+	    	<a href="#" id="main-vid-img"><img src="img/home.jpg" alt="adult and kid making food"></a>
+	    </span>
+
+
+	    <div class="process-banner">
+	    	<span class="process-heading">How it works</span>
+	    	<!-- <p><em>Shokudo</em> is like your friendly personal sous-chef.</p> -->
+ 			<div class="process-steps-wrap">
+			    <div class="col-1-4">
+			    	<div class="process-step-img"><img src="img/icon-watch.png" alt="first step watch icon" id="iconWatch"></div>
+			    	1. Watch our recipe video for inspiration
+			    </div> 
+			    <div class="col-1-4">
+			    	<div class="process-step-img"><img src="img/icon-order.png" alt="first step watch icon" id="iconOrder"></div>
+			    	2. Order the ingredients from the video
+			    </div> 
+			    <div class="col-1-4">
+			    	<div class="process-step-img"><img src="img/icon-deliver.png" alt="first step watch icon" id="iconDeliver"></div>
+			    	3. We deliver your order within 48 hours
+			    </div> 
+			    <div class="col-1-4">
+			    	<div class="process-step-img"><img src="img/icon-meal.png" alt="first step watch icon" id="iconMeal"></div>
+			    	4. Make a delicious meal and enjoy!
+			    </div> 
+			</div>
+  		</div>
+
+		<div class="updates-wrap">
+		    <div class="col-1-3">
+		   		<img id="update-img" src="img/food.jpg" alt="breakfast on a tray">
+		   		<span>Fried Chicken with Vegetable</span>
+		    </div> 
+		    <div class="col-1-3">
+		   		<img id="update-img" src="img/food2.jpg" alt="hainan chicken rice">
+		   		<span>Make Hainan Chicken Rice in 6 steps</span>
+		    </div> 
+		    <div class="col-1-3">
+		   		<img id="update-img" src="img/food3.jpg" alt="beef noddles">
+		   		<span>Beef Noddles</span>
+		    </div> 
+		</div>
+
+
+
+		<footer class="pageFooter">
+			<span>© 2016 Shokudo</span>
+			<a href="template-about.html">Terms and Conditions</a>
+			<a href="">Customer Service</a>
+		</footer>
+  
+
+
+<script>
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topNav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topNav";
+	    }
+	}
+</script>
+  
+  </body>
+  
+</html>
