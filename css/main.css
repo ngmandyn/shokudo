@@ -7,6 +7,46 @@ body {
   font-family: 'SanFranciscoDisplay-Regular', sans-serif;
 }
 
+#logoNav img {
+  width: 9em;
+  height: auto;
+  margin-top: 1em;
+}
+
+#iconCart img, #iconAccount img, #iconHome img {
+  display: inline-block;
+  height: 1.02em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  margin-right: 2em;
+  float: right;
+}
+
+#main-vid-img {
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+#iconWatch, #iconOrder, #iconDeliver, #iconMeal {
+  height: 3.5em;
+}
+
+#update-img1, #update-img2 {
+  padding-top: 0.2em;
+  display: block;
+  width: 100%;
+  z-index: 0;
+}
+
+#update-img1:hover, #update-img2:hover{
+  opacity: 0.8;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+/* test test */
+
 .topNav {
   position: relative;
   width: 100vw;
@@ -45,44 +85,11 @@ body {
   display: none;
 }
 
-/*.navItem {
-  letter-spacing: 0.1em;
-  margin: 0 0 0 0;
-  color: #886f5b;
-  text-decoration: none;
-}
-
-.navItem:hover {
-  color: #95ae6f;
-  transition: color 0.2s ease;
-}*/
-
-/*.navItem.curNavItem {
-  color: white;
-  background: #95ae6f;
-}
-*/
-
 .logoBox {
   position: absolute;
   display: block;
   width: 100vw;
   z-index: -1;
-}
-
-#logoNav img {
-  width: 9em;
-  height: auto;
-  margin-top: 1em;
-}
-
-#iconCart img, #iconAccount img, #iconHome img {
-  display: inline-block;
-  height: 1.02em;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-  margin-right: 2em;
-  float: right;
 }
 
 .button {
@@ -97,7 +104,7 @@ body {
   text-transform: uppercase;
 }
 
-button img {
+.button img {
   height: 0.8em;
   width: 0.9em;
   margin-right: 0.3em;
@@ -127,11 +134,7 @@ button img {
   cursor: pointer;
 }
 
-#main-vid-img img{
-  position: relative;
-  width: 100vw;
-  height: auto;
-}
+
 
 .play-icon {
   position: absolute;
@@ -193,43 +196,7 @@ button img {
   padding: 0 1em 0 3em;
 }
 
-#iconWatch, #iconOrder, #iconDeliver, #iconMeal {
-  height: 3.5em;
-}
 
-/*.process-step-img {
-  height: 5em;
-  width: 5em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.5em;
-  border-radius: 0em;
-}*/
-
-.updates-wrap {
-  width: 100vw;
-  padding-right: 16vw;
-  padding-left: 16vw;
-  font-size: 0.9em; 
-}
-
-.update-img span {
-  padding: 0.5em;
-  display: inline-block;
-}
-
-#update-img {
-  border-radius: 0.3em;
-  width: 100%;
-  min-height: 100%;
-  color: white;
-  font-size: 1.2em;
-}
-
-#update-img:hover {
-  cursor: pointer;
-  color: #ccc;
-}
 
 .account-wrap img {
   position: absolute;
@@ -250,12 +217,24 @@ button img {
   font-size: 0.9em; 
   margin-top: 1em;
   margin-bottom: 30em;
+  padding: 1em;
 }
 
 .item-img {
   width: 100%;
   color: white;
   font-size: 1.2em;  
+  margin-bottom: 0.5em;
+}
+
+.savings {
+  background: #95ae6f;
+  color: white;
+  display: inline;
+  padding: 0 0.3em 0 0.3em;
+  border-radius: 0.2em;
+  font-size: 0.85em;
+  letter-spacing: 0.02em;
 }
 
 .input-box {
@@ -330,6 +309,34 @@ input::-webkit-input-placeholder{
   z-index: 3;
 }
 
+.banner-img {
+  width: 100vw;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner-heading {
+  position: absolute;
+  bottom: 48%;
+  left: 2vw;
+  font-size: 1.3em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #4d3f33;
+  text-shadow: 0 0 0.4em #eee;
+}
+
+.banner-subheading {
+  position: absolute;
+  bottom: 33%;
+  left: 2vw;
+  font-size: 0.8em;
+  color: #4d3f33;
+  text-shadow: 0 0 0.2em #eee;
+}
+
 .sidebar {
   width: 15.1vw;
   border-radius: 0.3em;
@@ -347,6 +354,14 @@ input::-webkit-input-placeholder{
   text-align: center;
   margin: 0 0 1em 0;
   line-height: 1.25em;
+}
+
+.sidebar-divider {
+  border: none;
+  height: 1px;
+  color: gray;
+  background-color: #ddd;
+  margin: 1.5em 0 1.5em 0;
 }
 
 .sidebar span {
@@ -480,6 +495,7 @@ input::-webkit-input-placeholder{
   width: 100vw;
   clear: both;
   padding: 1em 2vw 1em 2vw;
+  position: relative;
 }
 
 .pageFooter span {
@@ -523,7 +539,7 @@ ol.steps-list {
   font-size: 1.05em;
   font-weight: 600;
   letter-spacing: 0.02em;
-  display: block;
+  display: inline-block;
   line-height: 1.4em;
   margin-top: 0.4em;
 }
