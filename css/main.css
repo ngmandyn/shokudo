@@ -27,6 +27,11 @@ body {
   width: 100vw;
   height: auto;
 }
+#main-vid-cook img {
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
 
 #iconWatch, #iconOrder, #iconDeliver, #iconMeal {
   height: 3.5em;
@@ -44,6 +49,20 @@ body {
   transition: all 0.5s;
   cursor: pointer;
 }
+
+#iconInstagram, #iconFacebook, #iconTwitter, #iconYoutube {
+  height: 1em;
+  margin-top: 0em;
+  margin-right: 1em;
+  margin-left: 0.5em;
+  float: right;
+}
+/* change the footer icon in lighter grey
+   modify the image on the landing page
+*/
+
+
+
 
 /* test test */
 
@@ -441,36 +460,32 @@ input::-webkit-input-placeholder{
   font-weight: 600;
 }
 
-
 .pageFooter {
-  display: block;
   width: 100vw;
   clear: both;
-  padding: 1em 2vw 1em 2vw;
+  padding: 1em 1em 1em 1em;
+  position: relative;
 }
 
 .pageFooter span {
-  color: #bbbbbb;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.8em;
-  margin-right: 1em;
+  color: #bbb;
+  padding-left: 1em;
 }
 
 .pageFooter a {
   color: #777777;
-  text-transform: uppercase;
   text-decoration: none;
   border-bottom: thin solid #777777;
   letter-spacing: 0.1em;
-  font-size: 0.8em;
-  margin: 0 1em 0 1em;
+  font-size: 0.9em;
+  margin: 0 0em 0 em;
 }
 
 .pageFooter a:hover {
   color: #332a22;
   border: none;
 }
+
 
 ol.steps-list {
   font-size: 1em;
