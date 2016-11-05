@@ -27,6 +27,7 @@ body {
   width: 100vw;
   height: auto;
 }
+
 #main-vid-cook img {
   position: relative;
   width: 100vw;
@@ -219,12 +220,6 @@ body {
 
 .account-wrap img {
   position: absolute;
-  opacity: 0.8;
-  width: 100vw;
-  height: auto;
-}
-
-.about-wrap img {
   opacity: 0.8;
   width: 100vw;
   height: auto;
