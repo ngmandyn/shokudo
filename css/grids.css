@@ -384,6 +384,11 @@
   .reviews {
     width: 100%;
   }
+  .footerItem1 {
+    display: block;
+    width: 100vw;
+
+  }
 }
 
 
