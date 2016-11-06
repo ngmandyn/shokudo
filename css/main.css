@@ -7,6 +7,11 @@ body {
   font-family: 'SanFranciscoDisplay-Regular', sans-serif;
 }
 
+.div-test {
+  background: #ddd;
+  padding: 3em;
+}
+
 #logoNav img {
   width: 9em;
   height: auto;
@@ -28,9 +33,8 @@ body {
   height: auto;
 }
 
-#main-vid-cook img {
-  position: relative;
-  width: 100vw;
+#main-vid-cook {
+  max-width: 100%;
   height: auto;
 }
 
@@ -58,9 +62,11 @@ body {
   margin-left: 0.5em;
   float: right;
 }
-/* change the footer icon in lighter grey
-   modify the image on the landing page
-*/
+
+#img-account {
+  max-width: 100%;
+  height: auto;
+}
 
 
 
@@ -112,6 +118,17 @@ body {
   z-index: -1;
 }
 
+.button1 {
+  font-size: 0.9em;
+  letter-spacing: 0.07em;
+  padding: 0.45em 1.1em 0.45em 1.1em;
+  border-radius: 0.4em;
+  font-weight: 600;
+  margin-right: 0.5em;
+  margin-bottom: 0em;
+  text-transform: uppercase;
+}
+
 .button {
   font-size: 0.9em;
   letter-spacing: 0.07em;
@@ -119,16 +136,15 @@ body {
   border-radius: 0.4em;
   font-weight: 600;
   margin-right: 0.5em;
-  margin-bottom: 0.5em;
-  margin-top: 0.3em;
+  margin-bottom: 0em;
   text-transform: uppercase;
 }
 
-.button img {
+/*.button img {
   height: 0.8em;
   width: 0.9em;
   margin-right: 0.3em;
-}
+}*/
 
 .cta {
   color: #fff;
@@ -140,12 +156,12 @@ body {
   text-decoration: none;
 }
 
-.cta a {
+/*.cta a {
   color: white;
   text-decoration: none;
-}
+}*/
 
-.button.cta:hover {
+.button.cta:hover, .button1.cta:hover {
   background: #c86726;
   border-top: thin solid #af591f;
   border-right: thin solid #af591f;
@@ -154,9 +170,7 @@ body {
   cursor: pointer;
 }
 
-
-
-.play-icon {
+/*.play-icon {
   position: absolute;
   text-align: center;
   top: 25em;
@@ -167,7 +181,7 @@ body {
 
 .play-icon img {
   height: 2.4em;
-}
+}*/
 
 .prod-num {
   color: #aaa;
@@ -216,13 +230,31 @@ body {
   padding: 0 1em 0 3em;
 }
 
+.products-banner {
+  background: #95ae6f;
+  color: white;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-left: 1.3em;
+  font-size: 1.3em;
+  margin-top: 1em;
+}
 
-
-.account-wrap img {
-  position: absolute;
-  opacity: 0.8;
+.account-wrap {
+  text-align: center;
   width: 100vw;
   height: auto;
+}
+
+#password {
+  font-size: 0.8em;
+  text-decoration: underline;
+  color: white;
+}
+
+#password:hover {
+  color: #95ae6f;
+  cursor: pointer;
 }
 
 .items-wrap {
@@ -258,12 +290,12 @@ body {
 
 .textInput-account {
   display: block;
-  font-size: 1em;
+  font-size: 1.2em;
   padding: 0.1em 0em 0.3em 0.5em;
-  border: thin solid #aaa;
-  border-radius: 0em;
+  border: thin solid #fff;
+  border-radius: 0.3em;
   width: 30vw;
-  height: 1.8em;
+  height: 2.2em;
   background: #fff;
   margin-bottom: 1em;
   margin-left: auto;
@@ -277,7 +309,7 @@ body {
   font-size: 1em;
   padding: 0.1em 0em 0.3em 0.5em;
   border: thin solid #aaa;
-  border-radius: 0em;
+  border-radius: 0.3em;
   width: 30vw;
   height: 1.5em;
   background: #fff;
@@ -289,9 +321,9 @@ body {
 
 .textInput2 {
   font-size: 1em;
-  padding: 0.3em 0em 0.3em 0.5em;
+  padding: 0em 0em 7em 0.5em;
   border: thin solid #aaa;
-  border-radius: 0em;
+  border-radius: 0.3em;
   width: 30vw;
   height: 8.5em;
   background: #ffffff;
@@ -505,15 +537,14 @@ input::-webkit-input-placeholder{
 
 .pageFooter {
   width: 100vw;
-  clear: both;
+  /*clear: both;*/
   padding: 1em 1em 1em 1em;
   position: relative;
 }
 
-.pageFooter span {
-  color: #bbb;
+/*.pageFooter span {
   padding-left: 1em;
-}
+}*/
 
 .pageFooter a {
   color: #777777;
@@ -521,12 +552,33 @@ input::-webkit-input-placeholder{
   border-bottom: thin solid #777777;
   letter-spacing: 0.1em;
   font-size: 0.9em;
-  margin: 0 0em 0 em;
 }
 
 .pageFooter a:hover {
   color: #332a22;
   border: none;
+}
+
+.footer-copyright {
+  margin-left: 1em;
+  margin-top: 2em;
+  display: inline;
+  background-color: none;
+  color: #ccc;
+}
+.footer-items {
+  margin-top: 2em;
+  display: inline;
+  margin-left: 2em;
+  background-color: none;
+}
+.footer-items a{
+  margin-left: 1em;
+}
+.footer-icons {
+  margin-top: 2em;
+  display: inline;
+  background-color: none;
 }
 
 

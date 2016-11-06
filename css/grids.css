@@ -3,13 +3,13 @@
 }
 
 .col-1-1 {
+  position: relative;
   border: none;
   border-radius: 0em;
   width: 100vw; 
   height: 32em;
   float: left;
   margin: 0em 0em 0em 0em;
-  position: relative;
 }
 
 .col-1-1 span {
@@ -42,16 +42,16 @@
 }
 
 .col-1-2 {
-  position: relative;
+  position: absolute;
+  display: block;
   background: none;
-  top: 60px;
-  border: thin solid #ddd;
+  top: 135px;
+  border: none;
   border-radius: 0.1em;
-  width: 45.7vw; 
-  height: 25em;
+  width: 100vw; 
+  height: 35em;
   float: left;
-  margin: 0em 0em 4em 2.9vw;
-  padding: 0em;
+  margin: 0em 0em 0em 0em;
   z-index: 0;
   text-align: center;
 }
@@ -61,41 +61,39 @@
   letter-spacing: 0.1em;
   margin-top: 1em;
   margin-bottom: 2em;
-  color: black;
+  color: white;
   font-size: 1.4em;
   font-weight: 600;
   z-index: 1000;
 }
 
 .col-1-2 p {
-  color: #ddd;
-  font-size: 0.9em;
-  font-style: italic;
-  text-decoration: underline;
+  font-size: 1.6em;
+  color: white;
 }
 
 .col-1-2-2 {
   position: relative;
   background: none;
-  border: thin solid white;
+  border: none;
   border-radius: 0em;
-  top: 40px;
   width: 100vw; 
   height: 45em;
   float: left;
-  margin: 0em 0em 0em 0em;
-  padding: 0em;
+  margin-top: 1em;
   z-index: 0;
   text-align: center;
 }
 
 .col-1-2-2 span {
+  top:50px;
   display: block;
-  margin-top: 0.5em;
+  margin-top: 1em;
   margin-bottom: 0em;
   color: black;
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: 600;
+  letter-spacing: 0.1em;
   z-index: 100;
 }
 
@@ -103,6 +101,7 @@
   color: #aaa;
   font-size: 0.8em;
   text-decoration: none;
+  letter-spacing: 0.1em;
 }
 
 .col-1-2-2-cta {
@@ -387,21 +386,39 @@
   .footerItem1 {
     display: block;
     width: 100vw;
-
+  }
+  .textInput-account {
+    width: 60vw;
   }
 }
 
 
 @media (max-width: 700px) {
-  .col-1-2 {
-    width: 94vw;
-  }
-  .textInput-account {
-    width: 50vw;
-  }
   .col-1-6 {
     width: 46vw;
     margin: 1vw;
+  }
+  #iconInstagram, #iconFacebook, #iconTwitter, #iconYoutube {
+    float:none;
+  }
+  .footer-copyright {
+    display: block;
+    width: 90vw;
+    text-align: center;
+    margin-left: 0em;
+    margin-top: 0em;
+}
+  .footer-items {
+    display: block;
+    width: 90vw;
+    text-align: center;
+    margin-left: 0em;
+    margin-top: 0.5em;
+  }
+  .footer-icons {
+    display: block;
+    text-align: center;
+    margin-top: 1.2em;
   }
 }
 
@@ -429,6 +446,12 @@
   .topNav span a {
     margin-left: 1em;
   }
+  .textInput {
+    width: 80vw;
+  }
+  .textInput2 {
+    width: 80vw;
+  }
 }
 
 @media (max-width: 500px) {
@@ -453,7 +476,6 @@
   }
   .container {
     width: 100vw;
-    /*padding: 2vw;*/
   }
   .text-right {
     text-align: right;

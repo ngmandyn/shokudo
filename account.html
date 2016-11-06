@@ -35,32 +35,51 @@
 
 
         <div class="account-wrap">
-			<div class="col-1-2">
-				<span>LOG IN</span>
-				<input class="textInput-account" type="text" id="form-input" placeholder="Username">
-				<input class="textInput-account" type="text" id="form-input" placeholder="Email (Forget Username)">
-                <input class="textInput-account" type="text" id="form-input" placeholder="Passwaord">
-                <p>Forget Password?</p>
-                <span class="product-vid-add"><button class="button cta">LOG IN</button></span>
-		    </div> 
+        	<picture>
+                <source media="(min-width: 1200px)" srcset="img/img-account-cropped1.jpg">
+                <source media="(min-width: 800px)" srcset="img/img-account-cropped2.jpg">
+                <source media="(min-width: 100px)" srcset="img/img-account-cropped4.jpg">
+
+                <source srcset="img/img-account-cropped1.jpg">
+
+        	    <img src="img/img-account-cropped1.jpg" srcset="img/img-account.jpg, img/img-account-cropped2.jpg, img/img-account-cropped4.jpg" alt="putting cake into an oven" id="img-account">
+            </picture>
 
 			<div class="col-1-2">
+				<span>LOG IN</span>
+				<input class="textInput-account" type="text" placeholder="Username (Optional)">
+				<input class="textInput-account" type="text" placeholder="Email">
+                <input class="textInput-account" type="text" placeholder="Passwaord">
+                <p id="password">Forget Password?</p>
+                <span class="product-vid-add"><button class="button1 cta">LOG IN</button></span>
+                <p>or</p>
+                <span class="product-vid-add"><button class="button cta">SIGN UP</button></span>
+			</div> 
+			<!-- <div class="col-1-2-1">
 			    <span>SIGN UP</span>
 				<input class="textInput-account" type="text" id="form-input" placeholder="Email">
                 <input class="textInput-account" type="text" id="form-input" placeholder="Passwaord">
                 <input class="textInput-account" type="text" id="form-input" placeholder="Confirm Passwaord">
                 <span class="product-vid-add"><button class="button cta">SIGN UP</button></span>
-		    </div>
+		    </div> -->
 		</div>
 
 
 		
-
-
 		<footer class="pageFooter">
-			<span>© 2016 Shokudo</span>
-			<a href="template-about.html">About Us</a>
-			<a href="">Customer Service</a>
+			<div class="footer-copyright">
+				© 2016 Shokudo
+			</div>
+		    <div class="footer-items">
+		    	<a href="template-about.html">Terms and Conditions</a>
+		        <a href="">Style Guides</a>
+		    </div>
+		    <div class="footer-icons">
+		        <img src="img/icon-instagram.png" id="iconInstagram">
+			    <img src="img/icon-facebook.png" id="iconFacebook">
+			    <img src="img/icon-twitter.png" id="iconTwitter">
+			    <img src="img/icon-youtube.png" id="iconYoutube">
+		    </div>
 		</footer>
   
  
