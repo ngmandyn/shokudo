@@ -285,9 +285,9 @@ body {
   width: 100vw;
   min-height: 2em;
   font-size: 0.9em; 
-  margin-top: 1em;
+  margin-top: 0em;
   margin-bottom: 30em;
-  padding: 1em;
+  padding: 0em;
 }
 
 .item-img {
