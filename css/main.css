@@ -7,8 +7,6 @@ body {
   font-family: 'SanFranciscoDisplay-Regular', sans-serif;
 }
 
-/*Resize the images, make the account image blurred, topnav, validate, */
-
 #logoNav img {
   width: 9em;
   height: auto;
@@ -152,11 +150,6 @@ body {
   border-bottom: 0.15em solid #bd6124;
   text-decoration: none;
 }
-
-/*.cta a {
-  color: white;
-  text-decoration: none;
-}*/
 
 .button.cta:hover, .button1.cta:hover, .button2.cta:hover {
   background: #c86726;
@@ -614,14 +607,14 @@ input::-webkit-input-placeholder{
   margin-left: 1em;
   margin-top: 2em;
   display: inline;
-  background-color: none;
+  background-color: transparent;
   color: #ccc;
 }
 .footer-items {
   margin-top: 2em;
   display: inline;
   margin-left: 2em;
-  background-color: none;
+  background-color: transparent;
 }
 .footer-items a{
   margin-left: 1em;
@@ -629,7 +622,7 @@ input::-webkit-input-placeholder{
 .footer-icons {
   margin-top: 2em;
   display: inline;
-  background-color: none;
+  background-color: transparent;
 }
 
 

@@ -13,37 +13,34 @@
 
   <body>
 	
-
-
 		<nav class="topNav" id="myTopnav">
-			  <span></span>
-			  <span><a href="about.html" class="navItem">About</a></span>
-			  <span><a href="contact.html" class="navItem">Contact</a></span>
-			  <span><a href="recipes.html" class="navItem">Shop</a></span>
+		  <span></span>
+		  <span><a href="about.html" class="navItem">About</a></span>
+		  <span><a href="contact.html" class="navItem">Contact</a></span>
+		  <span><a href="recipes.html" class="navItem">Shop</a></span>
 
-			  <div class="logoBox"><a href="#" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a></div>
+		  <div class="logoBox"><a href="#" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a></div>
 
-			  <a href="cart.html" id="iconCart"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
-			  <a href="account.html" id="iconAccount"><img src="img/icon-account.png" alt="account icon"></a>
-			  <a href="home.html" id="iconHome"><img src="img/icon-home.png" alt="search icon"></a>
-			  
-			  <span class="icon">
-			     <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
-			  </span>
+		  <a href="cart.html" id="iconCart"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
+		  <a href="account.html" id="iconAccount"><img src="img/icon-account.png" alt="account icon"></a>
+		  <a href="home.html" id="iconHome"><img src="img/icon-home.png" alt="search icon"></a>
+		  
+		  <span class="icon">
+		     <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
+		  </span>
 		</nav>
 
 
-
-        <div class="account-wrap">
+        <section class="account-wrap">
         	<picture>
                 <source media="(min-width: 1200px)" srcset="img/img-account-cropped1.jpg">
                 <source media="(min-width: 800px)" srcset="img/img-account-cropped2.jpg">
+                <source media="(min-width: 580px)" srcset="img/img-account-cropped3.jpg">
                 <source media="(min-width: 100px)" srcset="img/img-account-cropped4.jpg">
-
-                <source srcset="img/img-account-cropped1.jpg">
-
-        	    <img src="img/img-account-cropped1.jpg" srcset="img/img-account.jpg, img/img-account-cropped2.jpg, img/img-account-cropped4.jpg" alt="putting cake into an oven" id="img-account">
+                <source srcset="img/img-account-cropped1.jpg" media="(min-width: 1200px)">
+        	    <img src="img/img-account-cropped1.jpg" srcset="img/img-account.jpg 1x, img/img-account-cropped2.jpg 2x, img/img-account-cropped3.jpg 3x, img/img-account-cropped4.jpg 4x" alt="putting cake into an oven" id="img-account">
             </picture>
+
 
 			<div class="col-1-2">
 				<span>LOG IN</span>
@@ -55,38 +52,29 @@
                 <p>or</p>
                 <span class="product-vid-add"><button class="button cta">SIGN UP</button></span>
 			</div> 
-			<!-- <div class="col-1-2-1">
-			    <span>SIGN UP</span>
-				<input class="textInput-account" type="text" id="form-input" placeholder="Email">
-                <input class="textInput-account" type="text" id="form-input" placeholder="Passwaord">
-                <input class="textInput-account" type="text" id="form-input" placeholder="Confirm Passwaord">
-                <span class="product-vid-add"><button class="button cta">SIGN UP</button></span>
-		    </div> -->
-		</div>
+		</section>
 
 
-		
 		<footer class="pageFooter">
 			<div class="footer-copyright">
 				© 2016 Shokudo
 			</div>
 		    <div class="footer-items">
-		        <a href="">Style Guides</a>
-		    	<a href="">Citations</a>
-		    	<a href="">GitHub</a>
+		        <a href="index.html">Style Guides</a>
+		    	<a href="citations.html">Citations</a>
+		    	<a href="https://github.com/ngmandyn/shokudo">GitHub</a>
 		    </div>
 		    <div class="footer-icons">
-		        <img src="img/icon-instagram.png" id="iconInstagram">
-			    <img src="img/icon-facebook.png" id="iconFacebook">
-			    <img src="img/icon-twitter.png" id="iconTwitter">
-			    <img src="img/icon-youtube.png" id="iconYoutube">
+		        <img src="img/icon-instagram.png" id="iconInstagram" alt="instagram icon">
+			    <img src="img/icon-facebook.png" id="iconFacebook" alt="facebook icon">
+			    <img src="img/icon-twitter.png" id="iconTwitter" alt="twitter icon">
+			    <img src="img/icon-youtube.png" id="iconYoutube" alt="youtube icon">
 		    </div>
 		</footer>
   
  
 
 <script>
-	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 	function myFunction() {
 	    var x = document.getElementById("myTopnav");
 	    if (x.className === "topNav") {
