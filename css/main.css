@@ -286,8 +286,17 @@ body {
   min-height: 2em;
   font-size: 0.9em; 
   margin-top: 0em;
-  margin-bottom: 30em;
+  margin-bottom: 26em;
   padding: 0em;
+}
+
+.recipes-wrap {
+  width: 100vw;
+  font-size: 0.9em; 
+  margin-top: 1em;
+  margin-bottom: 8em;
+  padding: 0.5em;
+/*  float: left;*/
 }
 
 .item-img {
@@ -406,6 +415,26 @@ input::-webkit-input-placeholder{
   text-shadow: 0 0 0.2em #eee;
 }
 
+.banner-heading-darkbg {
+  position: absolute;
+  bottom: 48%;
+  left: 2vw;
+  font-size: 1.3em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ddd;
+  text-shadow: 0 0 0.4em #888;
+}
+
+.banner-subheading-darkbg {
+  position: absolute;
+  bottom: 33%;
+  left: 2vw;
+  font-size: 0.8em;
+  color: #ddd;
+  text-shadow: 0 0 0.2em #888;
+}
+
 .sidebar {
   width: 15.1vw;
   border-radius: 0.3em;
@@ -413,6 +442,7 @@ input::-webkit-input-placeholder{
   float: left;
   font-size: 1em;
   padding: 0 0 0 0.75vw;
+  z-index: 300;
 }
 
 .sidebar-heading1 {
@@ -563,6 +593,7 @@ input::-webkit-input-placeholder{
   /*clear: both;*/
   padding: 1em 1em 1em 1em;
   position: relative;
+  float: left;
 }
 
 /*.pageFooter span {
@@ -802,6 +833,10 @@ ol.steps-list {
   margin-right: 0.3em;
 }
 
+.cart-prodname:hover {
+  border-bottom: thin solid #95ae6f;
+}
+
 .cart-num {
   text-align: center;
   border-radius: 0.2em;
@@ -836,6 +871,10 @@ ol.steps-list {
   width: 6em;
 }
 
+.item-thumb:hover {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+}
+
 .item-thumb-checkout {
   width: 7em;
   float: left;
@@ -847,6 +886,7 @@ ol.steps-list {
   position: absolute;
   right: 0;
   bottom: -3.5em;
+  height: 3.5em;
 }
 
 .checkout-box {

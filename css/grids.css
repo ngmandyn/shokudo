@@ -140,11 +140,12 @@
   width: 15.1vw; 
   height: 15.5em;
   float: left;
-  margin: 0 0 1.5vw 1.05vw;
+  margin: 0 0 1.5vw 1.3vw;
   position: relative;
   padding: 0.6em;
   text-align: center;
   color: black;
+  z-index: 100;
 }
 
 .col-1-5:after {
@@ -354,7 +355,7 @@
     padding-right: 2vw;
   }
   .col-1-5 {
-    width: 22.4vw;
+    width: 22.7vw;
     margin-right: 0.8vw;
     margin-bottom: 1vw;
   }
@@ -365,6 +366,7 @@
     min-width: 96vw;  
     min-height: 0;
     margin-bottom: 0.5em;
+    z-index: 200;
   }
   .sidebar-dropdown {
     width: 19em;
@@ -479,7 +481,7 @@
   }
   .col-1-5 {
     width: 46vw;
-    margin: 1.2vw;
+    margin: 1.35vw;
   }
   .cart-heading {
     margin-left: 2vw;
