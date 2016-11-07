@@ -662,7 +662,7 @@ ol.steps-list {
   width: 67vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3em;
+  margin-bottom: 5em;
   padding-top: 0.3em;
   position: relative;
 }
@@ -703,6 +703,10 @@ ol.steps-list {
 } 
 
 .link.intext {
+  border-bottom: thin solid;
+}
+
+.edit:hover {
   border-bottom: thin solid;
 }
 
@@ -870,8 +874,9 @@ ol.steps-list {
 .paybtn {
   position: absolute;
   right: 0;
-  bottom: -3.5em;
+  bottom: -4em;
   height: 3.5em;
+  min-width: 5em;
 }
 
 .checkout-box {

@@ -1,80 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Baby Spinach: Product Details | Shokudo</title>
+    <head>
+	    <meta charset="UTF-8">
+	    <title>Bayleaf: Product Details | Shokudo</title>
 		<link rel="stylesheet" href="css/normalize.css"> 
 		<link rel="stylesheet" href="css/main.css"> 
 		<link rel="stylesheet" href="css/grids.css">
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  </head>
+    </head>
 
-  <body>
+    <body>
 	
-
-
 		<nav class="topNav" id="myTopnav">
-			  <span></span>
-			  <span><a href="about.html" class="navItem">About</a></span>
-			  <span><a href="contact.html" class="navItem">Contact</a></span>
-			  <span><a href="recipes.html" class="navItem">Shop</a></span>
+		  <span></span>
+		  <span><a href="about.html" class="navItem">About</a></span>
+		  <span><a href="contact.html" class="navItem">Contact</a></span>
+		  <span><a href="recipes.html" class="navItem">Shop</a></span>
 
-			  <div class="logoBox"><a href="#" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a></div>
+		  <div class="logoBox"><a href="#" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a></div>
 
-			  <a href="cart.html" id="iconCart"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
-			  <a href="account.html" id="iconAccount"><img src="img/icon-account.png" alt="account icon"></a>
-			  <a href="home.html" id="iconHome"><img src="img/icon-home.png" alt="search icon"></a>
-			  
-			  <span class="icon">
-			     <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
-			  </span>
+		  <a href="cart.html" id="iconCart"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
+		  <a href="account.html" id="iconAccount"><img src="img/icon-account.png" alt="account icon"></a>
+		  <a href="home.html" id="iconHome"><img src="img/icon-home.png" alt="search icon"></a>
+		  
+		  <span class="icon">
+		     <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
+		  </span>
 		</nav>
 
+		<div class="col-4-6">
+	   		<img class="product-img" src="img/bayleaf.jpg">
+	    </div> 
 
+		<div class="col-2-6">
+	   		<span class="prod-detail-name">Organic Bayleaf</span>
+	   		<p class="prod-num2">Product#: 20165581002</p>
+	   		<p class="prod-discp">Bayleaves are aromatic leaves that are used in many dishes for their distinctive flavour and fragrance. Certified organic!</p>
 
-			<div class="col-4-6">
-		   		<img class="product-img" src="img/spinach.jpg">
-		    </div> 
+			<label for="quantity-add-cart" class="formLabel">Quantity:</label>
+			<select class="dropdownInput" name="quantity-add-cart" id="quantity-add-cart">
+				    <option value="1">1</option>
+				    <option value="2">2</option>
+					<option value="3">3</option>
+				 	<option value="4">4</option>
+					<option value="5">5</option>
+				 	<option value="6">6</option>
+			</select>
 
-			<div class="col-2-6">
-		   		<span class="prod-detail-name">Organic Baby Spinach</span>
-		   		<p class="prod-num2">Product#: 20165581002</p>
-		   		<p class="prod-discp">Trimmed and washed organic baby spinach is delicious for salads, steamed or sautéed with butter. Certified organic!
-		   			</p>
+			<span class="prod-price2">$0.99 / 10g</span>
+	    	<span class="product-vid-add"><button onclick="location.href='cart.html'" class="button cta">ADD</button></span>
+	    </div>
 
-				<label class="formLabel">Quantity:</label>
-				<select class="dropdownInput" name="recipe" id="recipe">
-					    <option value="Pancakes">1</option>
-					    <option value="Cereal">2</option>
-						<option value="Sandwich">3</option>
-					 	<option value="Wrap">4</option>
-						<option value="Steak">5</option>
-					 	<option value="Seafood">6</option>
-				</select>
-
-				<span class="prod-price2">$2.99 / 100g</span>
-		    	<a href="cart.html"><span class="product-vid-add"><button class="button2 cta2">ADD</button></span></a>
-		    </div>
-
-			<div class="col-6-6">
-			  <div class="reviews-heading">Reviews</div>
-		   	  <div class="reviews">
-				<div class="item-review-pic"></div>
-				<span class="cart-prodname">Great product! 	&#9733; &#9733; &#9733; &#9733; &#9733;</span>
-        		<span class="review-content">Came exactly as described with all the ingredients needed for the recipe. Loved saving time by not having to go out shopping for my groceries!</span>
-			  </div>
-			  <div class="reviews">
-				<div class="item-review-pic"></div>
-				<span class="cart-prodname">Fresh and fast delivery &#9733; &#9733; &#9733; &#9733; &#9734;</span>
-        		<span class="review-content">My order arrived first thing the next morning! Worth the extra cost.</span>
-			  </div>
-		    </div> 
-
-
-
-
+		<div class="col-6-6">
+		    <div class="reviews-heading">Reviews</div>
+	   	   	    <div class="reviews">
+			    	<div class="item-review-pic"></div>
+					<span class="cart-prodname">Great product! 	&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+		    		<span class="review-content">Came exactly as described with all the ingredients needed for the recipe. Loved saving time by not having to go out shopping for my groceries!</span>
+		  		</div>
+			    <div class="reviews">
+					<div class="item-review-pic"></div>
+					<span class="cart-prodname">Fresh and fast delivery &#9733; &#9733; &#9733; &#9733; &#9734;</span>
+		    		<span class="review-content">My order arrived first thing the next morning! Worth the extra cost.</span>
+				</div>
+	   	</div> 
 
 		<footer class="pageFooter">
 			<div class="footer-copyright">
@@ -105,7 +96,7 @@
 	    }
 	}
 </script>
-  
+
   </body>
   
 </html>
