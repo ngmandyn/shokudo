@@ -7,6 +7,8 @@ body {
   font-family: 'SanFranciscoDisplay-Regular', sans-serif;
 }
 
+/*Resize the images, make the account image blurred, topnav, validate, */
+
 #logoNav img {
   width: 9em;
   height: auto;
