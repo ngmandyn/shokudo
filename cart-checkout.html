@@ -1,47 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Checkout | Shokudo</title>
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Checkout | Shokudo</title>
 		<link rel="stylesheet" href="css/normalize.css"> 
 		<link rel="stylesheet" href="css/main.css"> 
 		<link rel="stylesheet" href="css/grids.css">
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  </head>
+    </head>
 
-  <body>
-	
-
-
-
+	<body>
+		
 		<nav class="topNav" id="myTopnav">
-			  <span></span>
-			  <span><a href="about.html" class="navItem">About</a></span>
-			  <span><a href="contact.html" class="navItem">Contact</a></span>
-			  <span><a href="recipes.html" class="navItem">Shop</a></span>
-
-			  <div class="logoBox"><a href="#" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a></div>
-
-			  <a href="cart.html" id="iconCart"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
-			  <a href="account.html" id="iconAccount"><img src="img/icon-account.png" alt="account icon"></a>
-			  <a href="home.html" id="iconHome"><img src="img/icon-home.png" alt="search icon"></a>
-			  
-			  <span class="icon">
-			     <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
-			  </span>
+			<span aria-disabled="true"></span>
+			<span><a href="about.html" class="navItem">About</a></span>
+			<span><a href="contact.html" class="navItem">Contact</a></span>
+			<span><a href="recipes.html" class="navItem">Shop</a></span>
+			<div class="logoBox"><a href="#" id="logoNav"><img src="img/logo-shokudo.png" alt="SHOKUDO Logo"></a></div>
+			<a href="cart.html" id="iconCart"><img src="img/icon-cart.png" alt="shopping cart icon"></a>
+			<a href="account.html" id="iconAccount"><img src="img/icon-account.png" alt="account icon"></a>
+			<a href="home.html" id="iconHome"><img src="img/icon-home.png" alt="search icon"></a> 
+			<span class="icon">
+			    <a href="javascript:void(0);" onclick="myFunction()">MENU</a>
+			</span>
 		</nav>
 
-
 		<div class="container">
+
 			<h1 class="cart-heading">Checkout</h1>
 
 				<div class="checkout-box">
 					<h2 class="cart-heading2">Order Summary <a class="link edit" href="cart.html">&nbsp;Edit</a></h2>
 					<div class="order-sum">
-						<a href="detail-product-garlic.html"><img src="img/garlic.jpg" class="item-thumb-checkout"></img></a>
+						<a href="detail-product-garlic.html"><img alt="Garlic" src="img/garlic.jpg" class="item-thumb-checkout"></a>
 						<span class="cart-prodname"><a class="link" href="detail-product-garlic.html">Organic Colossal Garlic</a></span>
 		       			<span class="cart-prodquant">10g</span>
 		        		<span class="cart-prodnum">Product#: 20165581001</span>
@@ -49,174 +42,168 @@
 		        		<span class="checkout-prodamt">Unit Price: $0.99</span>
 					</div>
 					<div class="order-sum">
-						<a href="detail-product-spinach.html"><img src="img/spinach.jpg" class="item-thumb-checkout"></img></a>
-						<span class="cart-prodname"><a class="link" href="detail-product-spinach.html">Organic Baby Spinach</a></span>
-		       			<span class="cart-prodquant">100g</span>
+						<a href="detail-product-bayleaf.html"><img alt="Bayleaf" src="img/bayleaf.jpg" class="item-thumb-checkout"></a>
+						<span class="cart-prodname"><a class="link" href="detail-product-bayleaf.html">Organic Bayleaf</a></span>
+		       			<span class="cart-prodquant">10g</span>
 		        		<span class="cart-prodnum">Product#: 20165581002</span>
 		        		<span class="checkout-prodamt">Amount: 2</span>
-		        		<span class="checkout-prodamt">Unit Price: $2.99</span>
+		        		<span class="checkout-prodamt">Unit Price: $0.99</span>
 					</div>
 					<div class="order-sum-total">
-						Your Total: $8.95
+						Your Total: $4.95
 					</div>
 				</div>
 
-		<div class="checkout-box">
-		   		 <h2 class="cart-heading2">Shipping Information</h2>
-		   		 <div class="checkout-form">
-					<div class="field half layout">
-					    <label class="field__label">First Name</label>
-					    <input class="field__input" type="text" placeholder="Enter your first name" />
-				    </div>
-				    <div class="field half layout">
-					    <label class="field__label">Last Name</label>
-					    <input class="field__input" type="text" placeholder="Enter your last name" />
-				    </div>
-				    <div class="field full layout">
-		   		 	<label class="field__label">Email</label> 
-					<input class="field__input" type="text" id="email" placeholder="Enter your email address">
-					</div>
-				    <div class="field full layout">
-		   		 	<label class="field__label">Address Line 1</label> 
-					<input class="field__input" type="text" id="email" placeholder="Street address">
-					</div>
-				    <div class="field full layout">
-		   		 	<label class="field__label">Address Line 2</label> 
-					<input class="field__input" type="text" id="email" placeholder="Apartment, suite, building">
-					</div>
-				    <div class="field half layout">
-		   		 	<label class="field__label">Country</label> 
-					 <select class="checkout__dropdown" name="recipe" id="recipe"> 	
-					    <option value="Pancakes">Canada</option> 
-					</select>
-					</div>
-				    <div class="field half layout">
-		   		 	<label class="field__label">Postal Code</label> 
-					<input class="field__input" type="text" id="email" placeholder="Enter your postal code">
-					</div>
-				    <div class="field half layout">
-		   		 	<label class="field__label">Province</label> 
-					 <select class="checkout__dropdown" name="recipe" id="recipe"> 	
-					    <option value="Pancakes">British Columbia</option> 
-					</select>
-					</div>
-				    <div class="field half layout">
-		   		 	<label class="field__label">City / Town</label> 
-					<input class="field__input" type="text" id="email" placeholder="Enter your city / town">
-					</div>
-				</div>
-				</div>
-
-		  		<div class="checkout-box">
-		  <h2 class="cart-heading2">Payment Information</h2>
-
-			 <div class="checkout-form">
-					<div class="field half layout">
-					    <label class="field__label">Name on Card</label>
-					    <input class="field__input" type="text" placeholder="Enter name on card" />
-				    </div>
-				    <div class="field half layout">
-					    <label class="field__label">Card Number</label>
-					    <input class="field__input" type="text" placeholder="Example: 4111111111111111 (no dashes)" />
-				    </div>
-				    <div class="field third layout">
-		   		 	<label class="field__label">Expiration Month</label> 
-					<select class="checkout__dropdown" name="recipe" id="recipe"> 	
-						<option value="" disabled selected style="display: none;">Month</option>
-					    <option value="01">01 - January</option> 
-					    <option value="01">02 - February</option> 
-					    <option value="01">03 - March</option> 
-					    <option value="01">04 - April</option> 
-					    <option value="01">05 - May</option> 
-					    <option value="01">06 - June</option> 
-					    <option value="01">07 - July</option> 
-					    <option value="01">08 - August</option> 
-					    <option value="01">09 - September</option> 
-					    <option value="01">10 - October</option> 
-					    <option value="01">11 - November</option> 
-					    <option value="01">12 - December</option> 
-					</select>
-					</div>
-				    <div class="field third layout">
-		   		 	<label class="field__label">Expiration Year</label> 
-					<select class="checkout__dropdown" name="recipe" id="recipe"> 	
-						<option value="" disabled selected style="display: none;">Year</option>
-					    <option value="01">2016</option> 
-					    <option value="01">2017</option> 
-					    <option value="01">2018</option> 
-					    <option value="01">2019</option> 
-					</select>
-					</div>
-				    <div class="field third layout">
-		   		 	<label class="field__label">Security Code</label> 
-					<input class="field__input" type="text" id="email" placeholder="CVC">
-					</div>
-				    <div class="field half layout">
-		   		 	<label class="field__label">Country</label> 
-					 <select class="checkout__dropdown" name="recipe" id="recipe"> 	
-					    <option value="Pancakes">Canada</option> 
-					</select>
-					</div>
-				    <div class="field half layout">
-		   		 	<label class="field__label">Postal Code</label> 
-					<input class="field__input" type="text" id="email" placeholder="Enter your postal code">
-					</div>
-				    <div class="field half layout">
-		   		 	<label class="field__label">Province</label> 
-					 <select class="checkout__dropdown" name="recipe" id="recipe"> 	
-					    <option value="Pancakes">British Columbia</option> 
-					</select>
-					</div>
-				    <div class="field half layout">
-		   		 	<label class="field__label">City / Town</label> 
-					<input class="field__input" type="text" id="email" placeholder="Enter your city / town">
-					</div>
-				</div>
-				</div>
 				<div class="checkout-box">
-					 <h3 class="cart-heading3">Billing Address</h3>
-					  <label class="checkboxLabel"><input type="checkbox" class="checkboxInput" name="checkboxInput" value="Checkbox" checked>Use my shipping address for billing</label> 
+			   	    <h2 class="cart-heading2">Shipping Information</h2>
+			   		<div class="checkout-form">
+						<div class="field half layout">
+						    <label for="firstname" class="field__label">First Name</label>
+						    <input class="field__input" type="text" id="firstname" placeholder="Enter your first name" />
+					    </div>
+					    <div class="field half layout">
+						    <label for="lastname" class="field__label">Last Name</label>
+						    <input class="field__input" type="text" id="lastname" placeholder="Enter your last name" />
+					    </div>
+					    <div class="field full layout">
+				   		 	<label for="email" class="field__label">Email</label> 
+							<input class="field__input" type="text" id="email" placeholder="Enter your email address">
+						</div>
+					    <div class="field full layout">
+				   		 	<label for="address1" class="field__label">Address Line 1</label> 
+							<input class="field__input" type="text" id="address1" placeholder="Street address">
+						</div>
+					    <div class="field full layout">
+				   		 	<label for="address2" class="field__label">Address Line 2</label> 
+							<input class="field__input" type="text" id="address2" placeholder="Apartment, suite, building">
+						</div>
+					    <div class="field half layout">
+				   		 	<label for="postal-code-ship" class="field__label">Country</label> 
+							<select class="checkout__dropdown" name="country-ship" id="country-ship"> 	
+							    <option value="Canada">Canada</option> 
+							</select>
+						</div>
+					    <div class="field half layout">
+				   		 	<label for="postal-code-ship" class="field__label">Postal Code</label> 
+							<input class="field__input" type="text" id="postal-code-ship" placeholder="Enter your postal code">
+						</div>
+					    <div class="field half layout">
+				   		 	<label for="province-ship" class="field__label">Province</label> 
+							<select class="checkout__dropdown" name="province-ship" id="province-ship"> 	
+							    <option value="BC">British Columbia</option> 
+							</select>
+						</div>
+					    <div class="field half layout">
+				   		 	<label for="city-ship" class="field__label">City / Town</label> 
+							<input class="field__input" type="text" id="city-ship" placeholder="Enter your city / town">
+						</div>
+					</div> <!-- checkout-form -->
+				</div> <!-- checkout-box -->
+
+			  	<div class="checkout-box">
+			 		<h2 class="cart-heading2">Payment Information</h2>
+					<div class="checkout-form">
+						<div class="field half layout">
+						    <label for="card-name" class="field__label">Name on Card</label>
+						    <input class="field__input" type="text" id="card-name" placeholder="Enter name on card" />
+					    </div>
+					    <div class="field half layout">
+						    <label for="card-num" class="field__label">Card Number</label>
+						    <input class="field__input" type="text" id="card-num" placeholder="Example: 4111111111111111 (no dashes)" />
+					    </div>
+					    <div class="field third layout">
+				   		 	<label for="exp-month" class="field__label">Expiration Month</label> 
+							<select class="checkout__dropdown" name="exp-month" id="exp-month"> 	
+								<option value="" disabled selected style="display: none;">Month</option>
+							    <option value="01">01 - January</option> 
+							    <option value="02">02 - February</option> 
+							    <option value="03">03 - March</option> 
+							    <option value="04">04 - April</option> 
+							    <option value="05">05 - May</option> 
+							    <option value="06">06 - June</option> 
+							    <option value="07">07 - July</option> 
+							    <option value="08">08 - August</option> 
+							    <option value="09">09 - September</option> 
+							    <option value="10">10 - October</option> 
+							    <option value="11">11 - November</option> 
+							    <option value="12">12 - December</option> 
+							</select>
+						</div>
+					    <div class="field third layout">
+				   		 	<label for="exp-year" class="field__label">Expiration Year</label> 
+							<select class="checkout__dropdown" name="exp-year" id="exp-year"> 	
+								<option value="" disabled selected style="display: none;">Year</option>
+							    <option value="2016">2016</option> 
+							    <option value="2017">2017</option> 
+							    <option value="2018">2018</option> 
+							    <option value="2019">2019</option> 
+							</select>
+						</div>
+					    <div class="field third layout">
+				   		 	<label for="CVC" class="field__label">Security Code</label> 
+							<input class="field__input" type="text" id="CVC" placeholder="CVC">
+						</div>
+					    <div class="field half layout">
+				   		 	<label for="postal-code-pay" class="field__label">Country</label> 
+							<select class="checkout__dropdown" name="country-pay" id="country-pay"> 	
+							    <option value="Canada">Canada</option> 
+							</select>
+						</div>
+					    <div class="field half layout">
+				   		 	<label for="postal-code-pay" class="field__label">Postal Code</label> 
+							<input class="field__input" type="text" id="postal-code-pay" placeholder="Enter your postal code">
+						</div>
+					    <div class="field half layout">
+				   		 	<label for="province-pay" class="field__label">Province</label> 
+							<select class="checkout__dropdown" name="province-pay" id="province-pay"> 	
+							    <option value="Pancakes">British Columbia</option> 
+							</select>
+						</div>
+					    <div class="field half layout">
+				   		 	<label for="city-pay" class="field__label">City / Town</label> 
+							<input class="field__input" type="text" id="city-pay" placeholder="Enter your city / town">
+						</div>
+					</div> <!-- checkout-form -->
+				</div> <!-- checkout-box -->
+
+				<div class="checkout-box">
+					<h3 class="cart-heading3">Billing Address</h3>
+					<label for="billing-same" class="checkboxLabel"><input type="checkbox" class="checkboxInput" id="billing-same" name="billing-same" value="billing-same" checked>Use my shipping address for billing</label> 
 				</div>
 
-
-		<a href="cart-confirm.html"><button class="button cta paybtn">Pay</button></a>
-		</div>
-		</div>
-
-
-
-
+				<button onclick="location.href='cart-confirm.html'" class="button cta paybtn">Pay</button>
+			
+		</div> <!-- container -->
+			
 		<footer class="pageFooter">
 			<div class="footer-copyright">
 				© 2016 Shokudo
 			</div>
 		    <div class="footer-items">
-		        <a href="">Style Guides</a>
-		    	<a href="">Citations</a>
-		    	<a href="">GitHub</a>
+		        <a href="http://www.sfu.ca/~ngmandyn/iat339/P02_1/">Style Guide</a>
+		    	<a href="http://www.sfu.ca/~ngmandyn/iat339/P02_1/citations.html">Citations</a>
+		    	<a href="https://github.com/ngmandyn/shokudo">GitHub</a>
 		    </div>
 		    <div class="footer-icons">
-		        <img src="img/icon-instagram.png" id="iconInstagram">
-			    <img src="img/icon-facebook.png" id="iconFacebook">
-			    <img src="img/icon-twitter.png" id="iconTwitter">
-			    <img src="img/icon-youtube.png" id="iconYoutube">
+		        <img alt="Instagram Icon" src="img/icon-instagram.png" id="iconInstagram">
+			    <img alt="Facebook Icon" src="img/icon-facebook.png" id="iconFacebook">
+			    <img alt="Twitter Icon" src="img/icon-twitter.png" id="iconTwitter">
+			    <img alt="Youtube Icon" src="img/icon-youtube.png" id="iconYoutube">
 		    </div>
 		</footer>
   
+		<script>
+			/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+			function myFunction() {
+			    var x = document.getElementById("myTopnav");
+			    if (x.className === "topNav") {
+			        x.className += " responsive";
+			    } else {
+			        x.className = "topNav";
+			    }
+			}
+		</script>
 
-
-<script>
-	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-	function myFunction() {
-	    var x = document.getElementById("myTopnav");
-	    if (x.className === "topNav") {
-	        x.className += " responsive";
-	    } else {
-	        x.className = "topNav";
-	    }
-	}
-</script>
-
-  </body>
-  
+	</body>
+	  
 </html>

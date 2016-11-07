@@ -145,7 +145,6 @@
   padding: 0.6em;
   text-align: center;
   color: black;
-  z-index: 100;
 }
 
 .col-1-5:after {
@@ -159,6 +158,10 @@
   opacity:0;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+}
+
+.col-1-5:hover {
+  cursor: pointer;
 }
 
 .col-1-5:hover:after {
@@ -511,7 +514,7 @@
     padding: 0 0 1em 0;
   }
   .paybtn {
-    bottom: -2em;
+    bottom: -2.5em;
   }
   .text-right {
     text-align: right;
