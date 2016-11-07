@@ -157,7 +157,6 @@
   background:rgba(0,0,0,0.15);
   opacity:0;
   transition: all 0.5s;
-  -webkit-transition: all 0.5s;
 }
 
 .col-1-5:hover {
@@ -215,7 +214,6 @@
   background:rgba(0,0,0,0.15);
   opacity:0;
   transition: all 0.5s;
-  -webkit-transition: all 0.5s;
 }
 
 .col-1-6:hover:after {
@@ -396,7 +394,6 @@
   }
   .sidebar-oplist li {
     display: inline;
-    style: none;
   }
   .order-sum {
     width: 100%;
