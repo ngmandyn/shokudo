@@ -165,19 +165,6 @@ body {
   cursor: pointer;
 }
 
-/*.play-icon {
-  position: absolute;
-  text-align: center;
-  top: 25em;
-  display: block;
-  width: 100vw;
-  border: none;
-}
-
-.play-icon img {
-  height: 2.4em;
-}*/
-
 .prod-num {
   color: #aaa;
   font-size: 0.8em;
@@ -283,8 +270,7 @@ body {
 
 .items-wrap {
   width: 100vw;
-  min-height: 2em;
-  font-size: 0.9em; 
+  font-size: 1em; 
   margin-top: 0em;
   margin-bottom: 26em;
   padding: 0em;
@@ -568,6 +554,15 @@ input::-webkit-input-placeholder{
 .prod-detail-name {
   font-size: 1.2em;
   font-weight: 600;
+}
+
+.prod-title {
+  padding-top: 3em;
+  display: inline-block;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 600;
+  z-index: 3;
 }
 
 .prod-discp {
