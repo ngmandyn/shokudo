@@ -466,6 +466,15 @@
   .textInput2 {
     width: 80vw;
   }
+  .update-text1 {
+    font-size: 1.5em;
+    top: 90px;
+  }
+  .update-text2 {
+    color: #111;
+    font-size: 1.5em;
+    top: 90px;
+  }
 }
 
 @media (max-width: 500px) {
