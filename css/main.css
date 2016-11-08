@@ -38,10 +38,49 @@ body {
 }
 
 #update-img1, #update-img2 {
-  padding-top: 0.2em;
-  display: block;
-  width: 100%;
-  z-index: 0;
+  padding-top: 0.1em;
+  width: 100vw;
+}
+
+.main-vid1 {
+  position: relative;
+}
+.main-vid2 {
+  position: relative;
+}
+
+.update-text1 {
+  padding-left: 2em;
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  top: 200px;
+  text-shadow: 0 0 0.4em #000;
+  z-index: 100;
+}
+
+.update-text1:hover {
+  color: #95ae6f;
+  cursor: pointer;
+}
+
+.update-text2 {
+  padding-left: 2em;
+  position: absolute;
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  top: 200px;
+  text-shadow: 0 0 0.4em #888;
+  z-index: 110;
+}
+
+.update-text2:hover {
+  color: #95ae6f;
+  cursor: pointer;
 }
 
 #update-img1:hover, #update-img2:hover{
