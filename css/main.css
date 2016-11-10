@@ -116,6 +116,42 @@ body {
   padding: 1em 1.2em 1em 1.2em;
   border-radius: 2em;
   font-weight: 600;
+  text-transform: uppercase;  
+  color: #fff;
+  background: #d96f29;
+  border: thick solid #bd6124;
+  text-decoration: none;
+  z-index: 999;
+}
+
+.watch-vid-hover:hover {
+  cursor: pointer;
+}
+
+.detail-watch-vid {
+  position: absolute;
+  left: 46%;
+  top: 35%;
+  font-size: 2.3em;
+  padding: 1em 1.2em 1em 1.2em;
+  border-radius: 2em;
+  font-weight: 600;
+  text-transform: uppercase;  
+  color: white;
+  background: transparent;
+  border: thick solid white;
+  text-decoration: none;
+}
+
+.detail-watch-vid-hover {
+  visibility: hidden;
+  position: absolute;
+  left: 46%;
+  top: 35%;
+  font-size: 2.3em;
+  padding: 1em 1.2em 1em 1.2em;
+  border-radius: 2em;
+  font-weight: 600;
   margin-right: 0.5em;
   margin-bottom: 0em;
   text-transform: uppercase;  
@@ -131,6 +167,14 @@ visibility:visible;
 }
 
 .main-vid2:hover .watch-vid-hover {
+visibility:visible;
+}
+
+picture:hover {
+  cursor: pointer;
+}
+
+picture:hover .detail-watch-vid-hover {
 visibility:visible;
 }
 
@@ -299,7 +343,7 @@ visibility:visible;
   padding-top:0.2em;
   border: none;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.1em;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -313,7 +357,7 @@ visibility:visible;
   padding-left: 1em;
   padding-right: 1em;
   border-radius: 0.3em;
-  margin-right: 2em;
+  margin-right: 1.5em;
   float: right;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -684,7 +728,7 @@ input::-webkit-input-placeholder{
   padding-left: 1em;
 }*/
 
-.pageFooter a {
+.footer-items a {
   color: #777777;
   text-decoration: none;
   border-bottom: thin solid #777777;
@@ -692,7 +736,7 @@ input::-webkit-input-placeholder{
   font-size: 0.9em;
 }
 
-.pageFooter a:hover {
+.footer-items a:hover {
   color: #332a22;
   border: none;
 }
