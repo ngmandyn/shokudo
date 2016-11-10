@@ -677,7 +677,7 @@ hr {
   border: 1em solid #ddd;
   padding-top: 3em;
   margin: 0em;
-  max-width: 100%;
+  width: 94.5%;
   height: 70px;
   background-color: #95AE6F;
   text-align: center;
@@ -702,7 +702,7 @@ hr {
   border: 1em solid #ddd;
   padding-top: 3em;
   margin-top: 1rem;
-  width: 46%;
+  width: 45%;
   height: 70px;
   background-color: #95AE6F;
   text-align: center;
@@ -714,7 +714,7 @@ hr {
   border: 1em solid #ddd;
   padding-top: 3em;
   margin-top: 1em;
-  width: 12.6%;
+  width: 12.1%;
   height: 70px;
   text-align: center;
   background-color: #95AE6F;

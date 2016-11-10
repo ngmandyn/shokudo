@@ -89,6 +89,95 @@ body {
   cursor: pointer;
 }
 
+.watch-vid {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  font-size: 2.3em;
+  padding: 1em 1.2em 1em 1.2em;
+  border-radius: 2em;
+  font-weight: 600;
+  margin-right: 0.5em;
+  margin-bottom: 0em;
+  text-transform: uppercase;  
+  color: white;
+  background: transparent;
+  border: thick solid white;
+  text-decoration: none;
+}
+
+
+.watch-vid-hover {
+  visibility: hidden;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  font-size: 2.3em;
+  padding: 1em 1.2em 1em 1.2em;
+  border-radius: 2em;
+  font-weight: 600;
+  text-transform: uppercase;  
+  color: #fff;
+  background: #d96f29;
+  border: thick solid #bd6124;
+  text-decoration: none;
+  z-index: 999;
+}
+
+.watch-vid-hover:hover {
+  cursor: pointer;
+}
+
+.detail-watch-vid {
+  position: absolute;
+  left: 46%;
+  top: 35%;
+  font-size: 2.3em;
+  padding: 1em 1.2em 1em 1.2em;
+  border-radius: 2em;
+  font-weight: 600;
+  text-transform: uppercase;  
+  color: white;
+  background: transparent;
+  border: thick solid white;
+  text-decoration: none;
+}
+
+.detail-watch-vid-hover {
+  visibility: hidden;
+  position: absolute;
+  left: 46%;
+  top: 35%;
+  font-size: 2.3em;
+  padding: 1em 1.2em 1em 1.2em;
+  border-radius: 2em;
+  font-weight: 600;
+  margin-right: 0.5em;
+  margin-bottom: 0em;
+  text-transform: uppercase;  
+  color: #fff;
+  background: #d96f29;
+  border: thick solid #bd6124;
+  text-decoration: none;
+  z-index: 999;
+}
+
+.main-vid1:hover .watch-vid-hover {
+visibility:visible;
+}
+
+.main-vid2:hover .watch-vid-hover {
+visibility:visible;
+}
+
+picture:hover {
+  cursor: pointer;
+}
+
+picture:hover .detail-watch-vid-hover {
+visibility:visible;
+}
+
 #iconInstagram, #iconFacebook, #iconTwitter, #iconYoutube {
   height: 1em;
   margin-top: 0em;
@@ -272,6 +361,10 @@ body {
   float: right;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  border-top: thin solid #bd6124;
+  border-right: thin solid #bd6124;
+  border-left: thin solid #bd6124;
+  border-bottom: 0.15em solid #bd6124;
 }
 
 .button-add-all:hover {
@@ -320,11 +413,9 @@ body {
 .recipes-wrap {
   width: 100vw;
   font-size: 0.9em; 
-  margin-top: 1em;
   margin-bottom: 8em;
-  padding: 0.5em;
+  padding: 1em 0.5em 0.5em 0.5em;
   height: 30em;
-/*  float: left;*/
 }
 
 .item-img {
@@ -637,7 +728,7 @@ input::-webkit-input-placeholder{
   padding-left: 1em;
 }*/
 
-.pageFooter a {
+.footer-items a {
   color: #777777;
   text-decoration: none;
   border-bottom: thin solid #777777;
@@ -645,7 +736,7 @@ input::-webkit-input-placeholder{
   font-size: 0.9em;
 }
 
-.pageFooter a:hover {
+.footer-items a:hover {
   color: #332a22;
   border: none;
 }
